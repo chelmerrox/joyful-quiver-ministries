@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Familjen+Grotesk:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;  /* for Google Chrome and Apple Safari */
+  -moz-box-sizing: border-box;    /* for Mozilla Firefox */
+  -ms-box-sizing: border-box;   /* for Microsoft's Internet Explorer */
+  box-sizing: border-box;       /* box-sizing is a property allows us to change exactly how the box-model works  */
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+
+  /*  position: relative; */
+  min-height: 100vh;  /* vh (viewport height as unit of measure)) */
+  margin: 0;
+}
+
+.anton-font {
+  font-family: 'Anton', sans-serif;
+}
+
+.familjen-grotesk-font {
+  font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.font-yellow {
+  color: #F9EF23;
+}
+
+.bg-grey {
+  background-color: #141414;
+}
+
+.bg-yellow {
+  background-color: #F9EF23;
+}
+
+.border-black {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.border-yellow {
+  border: 2px solid #F9EF23;
+  border-radius: 10px;
+}
+
+/* Styles for navbar */
+.nav .ministry-logo-nav {
+  background-color: black;
+  background-image: url('./images/ministry-logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 40px;
+}
+
+.nav .nav-menu-mobile .nav-item-mobile .nav-link-mobile {
+  color: #1a2236;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 29px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styles for screens at 319px & below */
+@media only screen and (max-width: 319px) {
+  /* Styles for navbar */
+  .hamburger {
+    display: block;
+    margin-top: 9px;
+    margin-right: 14px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    position: fixed;
+    top: 27.5px;
+    left: 239px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    position: fixed;
+    top: 44px;
+    left: 237px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .nav-menu-mobile {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: #F9EF23;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(9px);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+    padding-top: 154px;
+  }
+
+  .nav-item-mobile {
+    margin: 16px 0;
+  }
+
+  .nav-menu-mobile.active {
+    left: 0;
+  }
+
+  .aboutus-nav-mobile:hover {
+    background-color: white;
+    color: #F9EF23;
+  }
+
+  .aboutus-nav-mobile:active {
+    border: 4px solid black;
+    font-size: 30px;
+  }
+}
+
+/* Styles for screens at 320px & above */
+@media only screen and (min-width: 320px) {
+  /* Styles for navbar */
+  .hamburger {
+    display: block;
+    margin-top: 9px;
+    margin-right: 14px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    position: fixed;
+    top: 21.5px;
+    left: 594px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    position: fixed;
+    top: 38px;
+    left: 594px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .nav-menu-mobile {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: #F9EF23;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(9px);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+    padding-top: 220px;
+  }
+
+  .nav-item-mobile {
+    margin: 16px 0;
+  }
+
+  .nav-menu-mobile.active {
+    left: 0;
+  }
+
+  .aboutus-nav-mobile:hover {
+    background-color: white;
+    color: #F9EF23;
+  }
+
+  .aboutus-nav-mobile:active {
+    border: 4px solid black;
+    color: #F9EF23;
+    font-size: 30px;
+  }
+}
+
+/* Styles for screens at 390px & above */
+@media only screen and (min-width: 390px) {
+  .hamburger.active .bar:nth-child(1) {
+    left: 430px;
+  }
+
+  .hamburger.active .bar:nth-child(3) { 
+    left: 430px;
+  }
+
+  .aboutus-nav-mobile:hover {
+    background-color: white;
+    color: #F9EF23;
+  }
+
+  .aboutus-nav-mobile:active {
+    border: 4px solid black;
+    color: #F9EF23;
+    font-size: 30px;
+  }
+}
+
+/* Styles for screens at 768px & above */
+@media only screen and (min-width: 768px) {
+  .nav-link-desktop:hover {
+    border: 2px solid red;
+    color: red;
+  }
+
+  .nav-link-desktop:active {
+    border: 4px solid red;
+    color: red;
+  }
+}
