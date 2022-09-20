@@ -16,7 +16,7 @@ function closeMenu() {
 }
 
 // Open Nav Menu for touchstart
-hamburger.addEventListener('touchstart', openMenu);
+hamburger.addEventListener('click', openMenu);
 
 // Close Nav Menu for touchend
-document.querySelectorAll('.nav-link-mobile').forEach((n) => n.addEventListener('touchend', closeMenu))
+document.querySelectorAll('.nav-link-mobile').forEach((n) => n.addEventListener('click', closeMenu))

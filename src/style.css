@@ -33,8 +33,16 @@ body {
   font-family: 'Familjen Grotesk', sans-serif;
 }
 
+.font-black {
+  color: #000000;
+}
+
 .font-yellow {
   color: #F9EF23;
+}
+
+.font-white {
+  color: white;
 }
 
 .bg-grey {
@@ -55,7 +63,20 @@ body {
   border-radius: 10px;
 }
 
+.white-border {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
 /* Styles for navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -434px;
+}
+
 .nav .ministry-logo-nav {
   background-color: black;
   background-image: url('./images/ministry-logo.png');
@@ -70,12 +91,6 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-menu-mobile {
@@ -99,9 +114,37 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.booking-btn {
+  position: relative;
+  top: 220px;
+}
+
+.booking-btn:hover {
+  background-color: white;
+  color: black;
+  border: 5px solid #F9EF23;
+}
+
+.booking-btn:active {
+  border: 10px solid #F9EF23;
+}
+
+.be-free-text {
+  position: relative;
+  top: 270px;
+  font-size: 100px;
+  font-style: italic;
+}
+
 /* Styles for screens at 319px & below */
 @media only screen and (max-width: 319px) {
   /* Styles for navbar */
+  .nav {
+    position: relative;
+    top: -110px;
+    z-index: 1;
+  }
+
   .hamburger {
     display: block;
     margin-top: 9px;
@@ -161,14 +204,33 @@ body {
   }
 
   .aboutus-nav-mobile:active {
-    border: 4px solid black;
+    border: 4px solid #000000;
     font-size: 30px;
+  }
+
+  .section-1 {
+    background-color: #141414;
+    background-image: url(./images/background-1-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 450px 150px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: -300px;
   }
 }
 
 /* Styles for screens at 320px & above */
 @media only screen and (min-width: 320px) {
   /* Styles for navbar */
+  .nav {
+    position: relative;
+    top: -272px;
+    z-index: 1;
+  }
+
   .hamburger {
     display: block;
     margin-top: 9px;
@@ -232,6 +294,19 @@ body {
     color: #F9EF23;
     font-size: 30px;
   }
+
+  .section-1 {
+    background-color: #141414;
+    background-image: url(./images/background-1-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px 120px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: -300px;
+  }
 }
 
 /* Styles for screens at 390px & above */
@@ -254,17 +329,45 @@ body {
     color: #F9EF23;
     font-size: 30px;
   }
+
+  .section-1 {
+    background-color: #141414;
+    background-image: url(./images/background-1-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px 120px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: -300px;
+  }
 }
 
 /* Styles for screens at 768px & above */
 @media only screen and (min-width: 768px) {
+  /* Styles for navbar */
+  .nav {
+    position: relative;
+    top: -434px;
+  }
+
   .nav-link-desktop:hover {
-    border: 2px solid red;
-    color: red;
+    border: 2px solid #F9EF23;
+    color: #F9EF23;
   }
 
   .nav-link-desktop:active {
-    border: 4px solid red;
-    color: red;
+    border: 4px solid #F9EF23;
+    color: #F9EF23;
+  }
+
+  .section-1 {
+    background-color: #141414;
+    background-image: url(./images/background-1-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 450px 50px;
   }
 }
