@@ -15,11 +15,11 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://raw.githack.com/chelmerrox/hope-in-christ-ministry/page-structure/dist/index.html)
 
 ## Preview
 
-![Website preview](images/preview.png)
+![Website preview](./preview.png)
 
 ## Getting Started
 
