@@ -136,6 +136,72 @@ body {
   font-style: italic;
 }
 
+.testimonies-text::before {
+  content: '';
+  display: block;
+  width: 218px;
+  height: 8px;
+  background: #F9EF23;
+  position: relative;
+  top: -13%;
+  left: 38%;
+}
+
+.testimonies-text {
+  font-size: 80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 30px;
+}
+
+/* The cards for testimonies */
+.grid-container div:nth-child(odd) {
+  border: 5px solid #F9EF23;
+  border-radius: 10px;
+}
+
+.grid-container div:nth-child(even) {
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.testimony-img-1{
+  background-color: white;
+  background-image: url('./images/pexels-kebs-visuals-3992656.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 72px;
+  border: 10px solid #F9EF23;
+  border-radius: 10px;
+}
+
+.testimony-img-2 {
+  background-color: #F9EF23;
+  background-image: url('./images/pexels-fernanda-latronico-802374.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 72px;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+.testimony-img-3 {
+  background-color: white;
+  background-image: url('./images/pexels-daniel-xavier-1121796.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 72px;
+  border: 10px solid #F9EF23;
+  border-radius: 10px;
+}
+
 /* Styles for screens at 319px & below */
 @media only screen and (max-width: 319px) {
   /* Styles for navbar */
