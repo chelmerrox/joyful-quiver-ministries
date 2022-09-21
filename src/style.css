@@ -177,7 +177,6 @@ body {
   background-size: cover;
   padding: 72px;
   border: 10px solid #F9EF23;
-  border-radius: 10px;
 }
 
 .testimony-img-2 {
@@ -188,7 +187,6 @@ body {
   background-size: cover;
   padding: 72px;
   border: 10px solid white;
-  border-radius: 10px;
 }
 
 .testimony-img-3 {
@@ -199,7 +197,15 @@ body {
   background-size: cover;
   padding: 72px;
   border: 10px solid #F9EF23;
-  border-radius: 10px;
+}
+
+.ministry-logo-footer {
+  background-color: black;
+  background-image: url('./images/ministry-logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 40px;
 }
 
 /* Styles for screens at 319px & below */
