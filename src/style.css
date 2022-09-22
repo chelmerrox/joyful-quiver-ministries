@@ -150,52 +150,31 @@ body {
   font-size: 80px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 30px;
-}
-
-/* The cards for testimonies */
-.grid-container div:nth-child(odd) {
-  border: 5px solid #F9EF23;
-  border-radius: 10px;
-}
-
-.grid-container div:nth-child(even) {
-  border: 5px solid white;
-  border-radius: 10px;
-}
-
-.testimony-img-1{
+.testimony-img-1 {
   background-color: white;
-  background-image: url('./images/pexels-kebs-visuals-3992656.jpg');
+  background-image: url('./images/1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 72px;
-  border: 10px solid #F9EF23;
+  padding: 100px;
 }
 
 .testimony-img-2 {
   background-color: #F9EF23;
-  background-image: url('./images/pexels-fernanda-latronico-802374.jpg');
+  background-image: url('./images/2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 72px;
-  border: 10px solid white;
+  padding: 100px;
 }
 
 .testimony-img-3 {
   background-color: white;
-  background-image: url('./images/pexels-daniel-xavier-1121796.jpg');
+  background-image: url('./images/3.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 72px;
-  border: 10px solid #F9EF23;
+  padding: 100px;
 }
 
 .ministry-logo-footer {
@@ -415,6 +394,34 @@ body {
   }
 }
 
+/* Styles for screens at 527px & above */
+@media only screen and (min-width: 527px) {
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 142px;
+  }
+}
+
+/* Styles for screens at 705px & above */
+@media only screen and (min-width: 705px) {
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 182px;
+  }
+}
+
+
+/* Styles for screens at 885px & above */
+@media only screen and (min-width: 885px) {
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 230px;
+  }
+}
+
 /* Styles for screens at 768px & above */
 @media only screen and (min-width: 768px) {
   /* Styles for navbar */
@@ -440,5 +447,38 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 450px 50px;
+  }
+
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 270px;
+  }
+}
+
+/* Styles for screens at 1100px & above */
+@media only screen and (min-width: 1100px) {
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 350px;
+  }
+}
+
+/* Styles for screens at 1500px & above */
+@media only screen and (min-width: 1500px) {
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 430px;
+  }
+}
+
+/* Styles for screens at 1700px & above */
+@media only screen and (min-width: 1700px) {
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 480px;
   }
 }
