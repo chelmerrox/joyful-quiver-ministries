@@ -259,8 +259,8 @@ body {
   }
 
   .section-1 {
-    background-color: #141414;
-    background-image: url(./images/background-1-1.png);
+    background-color: black;
+    background-image: url('./images/background-1-1-1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,11 +346,11 @@ body {
   }
 
   .section-1 {
-    background-color: #141414;
-    background-image: url(./images/background-1-1.png);
+    background-color:  black;
+    background-image: url('./images/background-1-1-1.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 300px 120px;
   }
 
@@ -381,16 +381,16 @@ body {
   }
 
   .section-1 {
-    background-color: #141414;
-    background-image: url(./images/background-1-1.png);
+    background-color: black;
+    background-image: url('./images/background-1-1-1.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 300px 120px;
   }
 
   .section-1 .paragraph-1 {
-    margin-top: -300px;
+    margin-top: -264px;
   }
 }
 
@@ -409,16 +409,6 @@ body {
   .testimony-img-2,
   .testimony-img-3 {
     padding: 182px;
-  }
-}
-
-
-/* Styles for screens at 885px & above */
-@media only screen and (min-width: 885px) {
-  .testimony-img-1,
-  .testimony-img-2,
-  .testimony-img-3 {
-    padding: 230px;
   }
 }
 
@@ -441,18 +431,27 @@ body {
   }
 
   .section-1 {
-    background-color: #141414;
-    background-image: url(./images/background-1-2.png);
+    background-color: black;
+    background-image: url('./images/background-1-1-1.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 450px 50px;
   }
 
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
-    padding: 270px;
+    padding: 220px;
+  }
+}
+
+/* Styles for screens at 885px & above */
+@media only screen and (min-width: 885px) {
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 230px;
   }
 }
 
