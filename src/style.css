@@ -113,28 +113,6 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.booking-btn {
-  position: relative;
-  top: 220px;
-}
-
-.booking-btn:hover {
-  background-color: white;
-  color: black;
-  border: 5px solid #F9EF23;
-}
-
-.booking-btn:active {
-  border: 10px solid #F9EF23;
-}
-
-.be-free-text {
-  position: relative;
-  top: 270px;
-  font-size: 100px;
-  font-style: italic;
-}
-
 .testimonies-text::before {
   content: '';
   display: block;
@@ -191,8 +169,21 @@ body {
   /* Styles for navbar */
   .nav {
     position: relative;
-    top: -110px;
+    top: -276px;
     z-index: 1;
+  }
+
+  .nav .ministry-logo-nav {
+    background-color: black;
+    background-image: url('./images/ministry-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 29px;
+  }
+
+  .nav .ministry-name-nav {
+    font-size: 10px;
   }
 
   .hamburger {
@@ -209,7 +200,7 @@ body {
     transform: translateY(8px) rotate(45deg);
     position: fixed;
     top: 27.5px;
-    left: 239px;
+    left: 210px;
     z-index: 10;
     background-color: black;
   }
@@ -218,7 +209,7 @@ body {
     transform: translateY(-8px) rotate(-45deg);
     position: fixed;
     top: 44px;
-    left: 237px;
+    left: 210px;
     z-index: 10;
     background-color: black;
   }
@@ -232,7 +223,7 @@ body {
     background-color: #F9EF23;
     mix-blend-mode: multiply;
     backdrop-filter: blur(9px);
-    width: 100%;
+    width: 62%;
     height: 100%;
     text-align: center;
     transition: 0.3s;
@@ -263,12 +254,40 @@ body {
     background-image: url('./images/background-1-1-1.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 450px 150px;
+    background-size: contain;
+    padding: 300px 7px;
   }
 
   .section-1 .paragraph-1 {
-    margin-top: -300px;
+    margin-top: -243px;
+  }
+
+  .paragraph-1 p {
+    font-size: 12px;
+  }
+
+  .booking-btn {
+    position: relative;
+    top: 125px;
+    left: -17px;
+    width: auto;
+  }
+  
+  .booking-btn:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid #F9EF23;
+  }
+  
+  .booking-btn:active {
+    border: 10px solid #F9EF23;
+  }
+
+  .be-free-text {
+    position: relative;
+    top: 220px;
+    font-size: 73px;
+    font-style: italic;
   }
 }
 
