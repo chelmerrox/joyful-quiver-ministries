@@ -125,7 +125,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\r\n\r\n/* Variable Declarations */\r\nconst hamburger = document.querySelector('.hamburger');\r\nconst navMenuMobile = document.querySelector('.nav-menu-mobile');\r\n\r\n/* Function Declarations */\r\nfunction openMenu() {\r\n  hamburger.classList.toggle('active');\r\n  navMenuMobile.classList.toggle('active');\r\n}\r\n\r\nfunction closeMenu() {\r\n  hamburger.classList.remove('active');\r\n  navMenuMobile.classList.remove('active');\r\n}\r\n\r\n// Open Nav Menu for touchstart\r\nhamburger.addEventListener('click', openMenu);\r\n\r\n// Close Nav Menu for touchend\r\ndocument.querySelectorAll('.nav-link-mobile').forEach((n) => n.addEventListener('click', closeMenu))\n\n//# sourceURL=webpack://hope-in-christ-ministry/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_mobile_menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/mobile-menu.js */ \"./src/modules/mobile-menu.js\");\n\r\n\r\n\r\n// Open Nav Menu for touchstart\r\n_modules_mobile_menu_js__WEBPACK_IMPORTED_MODULE_1__.hamburger.addEventListener('click', _modules_mobile_menu_js__WEBPACK_IMPORTED_MODULE_1__.openMenu);\r\n\r\n// Close Nav Menu for touchend\r\ndocument.querySelectorAll('.nav-link-mobile').forEach((n) => n.addEventListener('click', _modules_mobile_menu_js__WEBPACK_IMPORTED_MODULE_1__.closeMenu));\n\n//# sourceURL=webpack://hope-in-christ-ministry/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/mobile-menu.js":
+/*!************************************!*\
+  !*** ./src/modules/mobile-menu.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"closeMenu\": () => (/* binding */ closeMenu),\n/* harmony export */   \"hamburger\": () => (/* binding */ hamburger),\n/* harmony export */   \"openMenu\": () => (/* binding */ openMenu)\n/* harmony export */ });\n/* Variable Declarations */\r\nconst hamburger = document.querySelector('.hamburger');\r\nconst navMenuMobile = document.querySelector('.nav-menu-mobile');\r\n\r\n/* Function Declarations */\r\nconst openMenu = () => {\r\n  hamburger.classList.toggle('active');\r\n  navMenuMobile.classList.toggle('active');\r\n}\r\n\r\nconst closeMenu = () => {  \r\n  hamburger.classList.remove('active');\r\n  navMenuMobile.classList.remove('active');\r\n}\n\n//# sourceURL=webpack://hope-in-christ-ministry/./src/modules/mobile-menu.js?");
 
 /***/ }),
 
