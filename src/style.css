@@ -55,7 +55,6 @@ body {
 
 .border-black {
   border: 2px solid black;
-  border-radius: 10px;
 }
 
 .border-yellow {
@@ -85,13 +84,6 @@ body {
   padding: 40px;
 }
 
-.nav .nav-menu-mobile .nav-item-mobile .nav-link-mobile {
-  color: #1a2236;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .nav-menu-mobile {
   display: flex;
   justify-content: space-between;
@@ -111,21 +103,6 @@ body {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.testimonies-text::before {
-  content: '';
-  display: block;
-  width: 218px;
-  height: 8px;
-  background: #F9EF23;
-  position: relative;
-  top: -13%;
-  left: 38%;
-}
-
-.testimonies-text {
-  font-size: 80px;
 }
 
 .testimony-img-1 {
@@ -183,7 +160,8 @@ body {
   }
 
   .nav .ministry-name-nav {
-    font-size: 10px;
+    margin-left: 1px;
+    font-size: 12px;
   }
 
   .hamburger {
@@ -200,7 +178,7 @@ body {
     transform: translateY(8px) rotate(45deg);
     position: fixed;
     top: 27.5px;
-    left: 210px;
+    left: 165px;
     z-index: 10;
     background-color: black;
   }
@@ -209,21 +187,21 @@ body {
     transform: translateY(-8px) rotate(-45deg);
     position: fixed;
     top: 44px;
-    left: 210px;
+    left: 165px;
     z-index: 10;
     background-color: black;
   }
 
   .nav-menu-mobile {
     position: fixed;
-    left: -100%;
+    right: -100%;
     top: 0;
     gap: 0;
     flex-direction: column;
     background-color: #F9EF23;
     mix-blend-mode: multiply;
     backdrop-filter: blur(9px);
-    width: 62%;
+    width: 50%;
     height: 100%;
     text-align: center;
     transition: 0.3s;
@@ -236,7 +214,14 @@ body {
   }
 
   .nav-menu-mobile.active {
-    left: 0;
+    right: 0;
+  }
+
+  .nav .nav-item-mobile .nav-link-mobile {
+    color: #1a2236;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
   }
 
   .aboutus-nav-mobile:hover {
@@ -268,9 +253,10 @@ body {
 
   .booking-btn {
     position: relative;
-    top: 125px;
-    left: -17px;
+    top: 109px;
+    left: 35px;
     width: auto;
+    font-size: 15px;
   }
   
   .booking-btn:hover {
@@ -286,8 +272,57 @@ body {
   .be-free-text {
     position: relative;
     top: 220px;
-    font-size: 73px;
+    font-size: 51px;
     font-style: italic;
+  }
+
+  .testimonies-text::before {
+    content: '';
+    display: block;
+    width: 139px;
+    height: 5px;
+    background: #F9EF23;
+    position: relative;
+    top: -37%;
+    left: 22%;
+  }
+
+  .testimonies-text {
+    font-size: 38px;
+  }
+
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 66px 100px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .ministry-name-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .copyright-text {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .made-in-fiji-text {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .about-us-text {
+    font-size: 10px;
   }
 }
 
@@ -298,6 +333,14 @@ body {
     position: relative;
     top: -272px;
     z-index: 1;
+  }
+
+  .nav .ministry-logo-nav {
+    padding: 33px;
+  }
+
+  .nav .ministry-name-nav {
+    font-size: 14px;
   }
 
   .hamburger {
@@ -314,7 +357,7 @@ body {
     transform: translateY(8px) rotate(45deg);
     position: fixed;
     top: 21.5px;
-    left: 594px;
+    left: 181px;
     z-index: 10;
     background-color: black;
   }
@@ -323,21 +366,21 @@ body {
     transform: translateY(-8px) rotate(-45deg);
     position: fixed;
     top: 38px;
-    left: 594px;
+    left: 181px;
     z-index: 10;
     background-color: black;
   }
 
   .nav-menu-mobile {
     position: fixed;
-    left: -100%;
+    right: -100%;
     top: 0;
     gap: 0;
     flex-direction: column;
     background-color: #F9EF23;
     mix-blend-mode: multiply;
     backdrop-filter: blur(9px);
-    width: 100%;
+    width: 50%;
     height: 100%;
     text-align: center;
     transition: 0.3s;
@@ -350,7 +393,14 @@ body {
   }
 
   .nav-menu-mobile.active {
-    left: 0;
+    right: 0;
+  }
+
+  .nav .nav-item-mobile .nav-link-mobile {
+    color: #1a2236;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
   }
 
   .aboutus-nav-mobile:hover {
@@ -370,22 +420,112 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 300px 120px;
+    padding: 272px 0px 216px 0px;
   }
 
   .section-1 .paragraph-1 {
-    margin-top: -300px;
+    margin-top: -240px;
+  }
+
+  .section-1 .paragraph-1 {
+    font-size: 11px;
+  }
+
+  .booking-btn {
+    position: relative;
+    top: 72px;
+    left: 48px;
+    font-size: 16px;
+    width: auto;
+  }
+
+  .booking-btn:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid #F9EF23;
+  }
+  
+  .booking-btn:active {
+    border: 10px solid #F9EF23;
+  }
+
+  .be-free-text {
+    position: relative;
+    top: 115px;
+    font-size: 40px;
+    font-style: italic;
+  }
+
+  .testimonies-text::before {
+    content: '';
+    display: block;
+    width: 139px;
+    height: 5px;
+    background: #F9EF23;
+    position: relative;
+    top: -37%;
+    left: 22%;
+  }
+
+  .testimonies-text {
+    font-size: 42px;
+  }
+
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 86px 100px;
+  }
+ 
+  footer  {
+    padding: 10px;
+  }
+
+  .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .ministry-name-footer,
+  .copyright-text,
+  .made-in-fiji-text {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+
+  .about-us-text {
+    font-size: 12px;
+  }
+}
+
+/* Styles for screens at 370px & above */
+@media only screen and (min-width: 370px) {
+  .booking-btn {
+    position: relative;
+    top: 72px;
+    left: -55px;
+    font-size: 16px;
+    width: auto;
+  }
+
+  .booking-btn:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid #F9EF23;
+  }
+  
+  .booking-btn:active {
+    border: 10px solid #F9EF23;
   }
 }
 
 /* Styles for screens at 390px & above */
 @media only screen and (min-width: 390px) {
   .hamburger.active .bar:nth-child(1) {
-    left: 430px;
+    left: 225px;
   }
 
   .hamburger.active .bar:nth-child(3) { 
-    left: 430px;
+    left: 225px;
   }
 
   .aboutus-nav-mobile:hover {
@@ -405,25 +545,77 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 300px 120px;
+    padding: 300px 7px;
   }
 
   .section-1 .paragraph-1 {
-    margin-top: -264px;
+    margin-top: -225px;
+  }
+
+  .section-1 .paragraph-1 p {
+    font-size: 15px;
+  }
+
+  .be-free-text {
+    font-size: 55px;
+  }
+
+  .testimonies-text::before {
+    left: 32%;
   }
 }
 
 /* Styles for screens at 527px & above */
 @media only screen and (min-width: 527px) {
+  .nav .ministry-logo-nav {
+    padding: 38px;
+  }
+
+  .nav .ministry-name-nav {
+    font-size: 20px;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    left: 346px;
+  }
+
+  .hamburger.active .bar:nth-child(3) { 
+    left: 346px;
+  }
+
+  .section-1 .paragraph-1 p {
+    font-size: 19px;
+  }
+
+  .booking-btn {
+    left: -15px;
+    font-size: 20px;
+  }
+
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
     padding: 142px;
   }
+
+  footer {
+    padding: 26px;
+  }
+
+  ministry-name-footer, 
+  .copyright-text, 
+  .made-in-fiji-text,
+  .about-us-text {
+    font-size: 13px;
+  }
 }
 
 /* Styles for screens at 705px & above */
 @media only screen and (min-width: 705px) {
+  .section-1 .paragraph-1 p {
+    font-size: 19px;
+  }
+
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
@@ -436,7 +628,21 @@ body {
   /* Styles for navbar */
   .nav {
     position: relative;
-    top: -434px;
+    top: -365px;
+  }
+
+  .nav .ministry-name-nav {
+    font-size: 25px;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    top: 44px;
+    left: 419px;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    top: 60px;
+    left: 419px;
   }
 
   .nav-link-desktop:hover {
@@ -455,7 +661,34 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 450px 50px;
+    padding: 382px 50px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: -310px;
+  }
+
+  .section-1 .paragraph-1 p {
+    font-size: 22px;
+  }
+
+  .booking-btn {
+    top: 105px;
+    left: -40px;
+    font-size: 27px;
+  }
+
+  .be-free-text {
+    font-size: 81px;
+  }
+
+  .testimonies-text::before {
+    left: 39%;
+    width: 172px;
+  }
+
+  .testimonies-text {
+    font-size: 73px;
   }
 
   .testimony-img-1,
@@ -463,10 +696,32 @@ body {
   .testimony-img-3 {
     padding: 220px;
   }
+
+  .ministry-logo-footer {
+    padding: 31px;
+  }
+
+  .ministry-name-footer, 
+  .copyright-text, 
+  .made-in-fiji-text,
+  .about-us-text {
+    font-size: 18px;
+  }
 }
 
 /* Styles for screens at 885px & above */
 @media only screen and (min-width: 885px) {
+  .booking-btn {
+    top: 142px;
+    left: 0;
+  }
+
+  .be-free-text {
+    font-size: 81px;
+    position: relative;
+    top: 217px;
+  }
+
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
@@ -476,6 +731,24 @@ body {
 
 /* Styles for screens at 1100px & above */
 @media only screen and (min-width: 1100px) {
+  .section-1 .paragraph-1 {
+    margin-top: -274px;
+  }
+
+  .section-1 .paragraph-1 p {
+    font-size: 25px;
+  }
+
+  .booking-btn {
+    top: 161px;
+    left: 68px;
+  }
+
+  .testimonies-text::before {
+    left: 43%;
+    width: 205px;
+  }
+
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
@@ -485,6 +758,10 @@ body {
 
 /* Styles for screens at 1500px & above */
 @media only screen and (min-width: 1500px) {
+  .booking-btn {
+    left: 104px;
+  }
+
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
@@ -494,6 +771,10 @@ body {
 
 /* Styles for screens at 1700px & above */
 @media only screen and (min-width: 1700px) {
+  .booking-btn {
+    left: 188px;
+  }
+
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
