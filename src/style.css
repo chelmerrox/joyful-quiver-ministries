@@ -146,7 +146,7 @@ body {
   /* Styles for navbar */
   .nav {
     position: relative;
-    top: -276px;
+    top: 0;
     z-index: 1;
   }
 
@@ -156,7 +156,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 29px;
+    padding: 19px;
   }
 
   .nav .ministry-name-nav {
@@ -230,11 +230,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 300px 7px;
+    padding: 13px 7px 300px 7px;
   }
 
-  .section-1 .paragraph-1.active {
-    margin-top: -243px;
+  .section-1 .paragraph-1 {
+    margin-top: 30px;
   }
 
   .paragraph-1 p {
@@ -242,6 +242,8 @@ body {
   }
 
   .booking-btn {
+    position: relative;
+    top: 85px;
     width: auto;
     font-size: 15px;
   }
@@ -250,9 +252,9 @@ body {
     border: 10px solid #F9EF23;
   }
 
-  .be-free-text.active {
+  .be-free-text {
     position: relative;
-    top: 220px;
+    top: 174px;
     font-size: 51px;
     font-style: italic;
   }
