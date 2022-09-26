@@ -454,9 +454,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 110px;
+    padding: 140px;
     position: relative;
-    top: -91px;
+    top: -101px;
   }
 
   .booking-btn {
@@ -806,7 +806,7 @@ body {
   }
 
   .arrow-img {
-    padding: 171px;
+    padding: 189px;
   }
 
   .booking-btn {
@@ -947,6 +947,10 @@ body {
 
   .section-1 .paragraph-1 p {
     font-size: 25px;
+  }
+
+  .arrow-img {
+    padding: 247px;
   }
 
   .booking-btn {
