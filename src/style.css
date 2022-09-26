@@ -259,15 +259,12 @@ body {
     font-style: italic;
   }
 
-  .testimonies-text::before {
+  .yellow-line-divider {
     content: '';
     display: block;
     width: 139px;
     height: 5px;
     background: #F9EF23;
-    position: relative;
-    top: -37%;
-    left: 22%;
   }
 
   .testimonies-text {
@@ -417,15 +414,12 @@ body {
     font-style: italic;
   }
 
-  .testimonies-text::before {
+  .yellow-line-divider {
     content: '';
     display: block;
     width: 139px;
     height: 5px;
     background: #F9EF23;
-    position: relative;
-    top: -37%;
-    left: 22%;
   }
 
   .testimonies-text {
@@ -497,10 +491,6 @@ body {
 
   .be-free-text {
     font-size: 55px;
-  }
-
-  .testimonies-text::before {
-    left: 32%;
   }
 }
 
@@ -618,8 +608,7 @@ body {
     font-size: 81px;
   }
 
-  .testimonies-text::before {
-    left: 39%;
+  .yellow-line-divider {
     width: 172px;
   }
 
@@ -677,8 +666,7 @@ body {
     top: 161px;
   }
 
-  .testimonies-text::before {
-    left: 43%;
+  .yellow-line-divider {
     width: 205px;
   }
 
