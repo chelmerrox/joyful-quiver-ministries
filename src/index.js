@@ -14,6 +14,7 @@ hamburger.addEventListener('click', openMenu);
 document.querySelectorAll('.nav-link-mobile').forEach((n) => n.addEventListener('click', closeMenu));
 
 const navMenuMobileLinks = Array.from(document.getElementsByClassName('nav-link-mobile'));
+console.log(navMenuMobileLinks);
 
 navMenuMobileLinks.forEach((link, i) => {
   link.addEventListener('click', (e) => {
@@ -29,8 +30,6 @@ navMenuMobileLinks.forEach((link, i) => {
       sectionOne.style.backgroundImage = 'url("./images/background-2.png")';
       paragraphOne.classList.remove('active');
       beFreeText.classList.remove('active');
-    } else {
-      
     }
   });
 });

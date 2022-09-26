@@ -265,6 +265,57 @@ body {
     font-style: italic;
   }
 
+  /* Booking Section */
+  .get-in-touch-today-text {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .typeform {
+    width: 100%;
+    height: 759px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 40px;
+  }
+
+  .about-section p {
+    font-size: 13px;
+  }
+
+  .healing-img {
+    background-image: url('./images/healing.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px;
+  }
+
+  .deliverance-img {
+    background-image: url('./images/deliverance.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px;
+  }
+
+  .discipleship-img {
+    background-image: url('./images/discipleship.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 33px;
+    position: relative;
+    top: 78px;
+  }
+
+  /* Testimonies Section */
   .yellow-line-divider {
     content: '';
     display: block;
@@ -426,6 +477,57 @@ body {
     font-style: italic;
   }
 
+  /* Booking Section */
+  .get-in-touch-today-text {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .typeform {
+    width: 100%;
+    height: 759px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 40px;
+  }
+
+  .about-section p {
+    font-size: 13px;
+  }
+
+  .healing-img {
+    background-image: url('./images/healing.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 132px;
+  }
+
+  .deliverance-img {
+    background-image: url('./images/deliverance.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 132px;
+  }
+
+  .discipleship-img {
+    background-image: url('./images/discipleship.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 132px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 33px;
+    position: relative;
+    top: 78px;
+  }
+
+  /* Testimonies Section */
   .yellow-line-divider {
     content: '';
     display: block;
@@ -485,6 +587,11 @@ body {
   .be-free-text {
     font-size: 61px;
   }
+
+  /* About Section */
+  .about-section p {
+    font-size: 16px;
+  }
 }
 
 /* Styles for screens at 390px & above */
@@ -524,6 +631,32 @@ body {
     top: -82px;
     font-size: 63px;
   }
+
+  /* Booking Section */
+  .get-in-touch-today-text {
+    font-size: 50px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 50px;
+  }
+
+  .about-section p {
+    font-size: 17px;
+  }
+
+  .healing-img, 
+  .deliverance-img,
+  .discipleship-img {
+    padding: 150px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 40px;
+    position: relative;
+    top: 90px;
+  }
 }
 
 /* Styles for screens at 527px & above */
@@ -552,6 +685,33 @@ body {
     font-size: 20px;
   }
 
+  /* Booking Section */
+  .get-in-touch-today-text {
+    font-size: 60px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section p {
+    font-size: 19px;
+  }
+
+  .healing-img, 
+  .deliverance-img,
+  .discipleship-img {
+    padding: 230px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 45px;
+    position: relative;
+    top: 170px;
+  }
+
+  /* Testimonies Section */
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
@@ -575,6 +735,24 @@ body {
     font-size: 19px;
   }
 
+  /* About Section */
+  .about-us-text {
+    font-size: 50px;
+  }
+
+  .healing-img, 
+  .deliverance-img,
+  .discipleship-img {
+    padding: 250px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 50px;
+    position: relative;
+    top: 180px;
+  }
+
+  /* Testimonies Section */
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
@@ -640,6 +818,28 @@ body {
     font-size: 81px;
   }
 
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section p {
+    font-size: 22px;
+  }
+
+  .healing-img, 
+  .deliverance-img,
+  .discipleship-img {
+    padding: 302px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 55px;
+    position: relative;
+    top: 190px;
+  }
+
+  /* Testimonies Section */
   .yellow-line-divider {
     width: 172px;
   }
@@ -686,10 +886,56 @@ body {
     top: -156px;
   }
 
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section p {
+    font-size: 22px;
+  }
+
+  .healing-img, 
+  .deliverance-img,
+  .discipleship-img {
+    padding: 230px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 40px;
+    position: relative;
+    top: 150px;
+  }
+
+  /* Testimonies Section */
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
     padding: 230px;
+  }
+}
+
+/* Styles for screens at 992px & above */
+@media only screen and (min-width: 992px) {
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section p {
+    font-size: 22px;
+  }
+
+  .healing-img, 
+  .deliverance-img,
+  .discipleship-img {
+    padding: 157px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 40px;
+    position: relative;
+    top: 100px;
   }
 }
 
@@ -711,6 +957,28 @@ body {
     top: -179px;
   }
 
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section p {
+    font-size: 22px;
+  }
+
+  .healing-img, 
+  .deliverance-img,
+  .discipleship-img {
+    padding: 167px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 45px;
+    position: relative;
+    top: 120px;
+  }
+
+  /* Testimonies Section */
   .yellow-line-divider {
     width: 205px;
   }
@@ -724,6 +992,28 @@ body {
 
 /* Styles for screens at 1500px & above */
 @media only screen and (min-width: 1500px) {
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section p {
+    font-size: 25px;
+  }
+
+  .healing-img, 
+  .deliverance-img,
+  .discipleship-img {
+    padding: 225px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 50px;
+    position: relative;
+    top: 150px;
+  }
+
+  /* Testimonies Section */
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
@@ -733,6 +1023,28 @@ body {
 
 /* Styles for screens at 1700px & above */
 @media only screen and (min-width: 1700px) {
+   /* About Section */
+   .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section p {
+    font-size: 25px;
+  }
+
+  .healing-img, 
+  .deliverance-img,
+  .discipleship-img {
+    padding: 267px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 55px;
+    position: relative;
+    top: 220px;
+  }
+
+  /* Testimonies Section */
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
