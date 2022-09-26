@@ -243,7 +243,7 @@ body {
     padding: 300px 7px;
   }
 
-  .section-1 .paragraph-1 {
+  .section-1 .paragraph-1.active {
     margin-top: -243px;
   }
 
@@ -269,7 +269,7 @@ body {
     border: 10px solid #F9EF23;
   }
 
-  .be-free-text {
+  .be-free-text.active {
     position: relative;
     top: 220px;
     font-size: 51px;
