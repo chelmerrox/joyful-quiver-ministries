@@ -242,9 +242,6 @@ body {
   }
 
   .booking-btn {
-    position: relative;
-    top: 109px;
-    left: 35px;
     width: auto;
     font-size: 15px;
   }
@@ -302,10 +299,6 @@ body {
 
   .made-in-fiji-text {
     margin-right: 5px;
-    font-size: 10px;
-  }
-
-  .about-us-text {
     font-size: 10px;
   }
 }
@@ -407,7 +400,6 @@ body {
   .booking-btn {
     position: relative;
     top: 72px;
-    left: 48px;
     font-size: 16px;
     width: auto;
   }
@@ -458,10 +450,6 @@ body {
     font-size: 12px;
     margin-left: 2px;
   }
-
-  .about-us-text {
-    font-size: 12px;
-  }
 }
 
 /* Styles for screens at 370px & above */
@@ -469,7 +457,6 @@ body {
   .booking-btn {
     position: relative;
     top: 72px;
-    left: -55px;
     font-size: 16px;
     width: auto;
   }
@@ -538,7 +525,6 @@ body {
   }
 
   .booking-btn {
-    left: -15px;
     font-size: 20px;
   }
 
@@ -552,10 +538,9 @@ body {
     padding: 26px;
   }
 
-  ministry-name-footer, 
+  .ministry-name-footer, 
   .copyright-text, 
-  .made-in-fiji-text,
-  .about-us-text {
+  .made-in-fiji-text {
     font-size: 13px;
   }
 }
@@ -624,7 +609,6 @@ body {
 
   .booking-btn {
     top: 105px;
-    left: -40px;
     font-size: 27px;
   }
 
@@ -653,8 +637,7 @@ body {
 
   .ministry-name-footer, 
   .copyright-text, 
-  .made-in-fiji-text,
-  .about-us-text {
+  .made-in-fiji-text {
     font-size: 18px;
   }
 }
@@ -663,7 +646,6 @@ body {
 @media only screen and (min-width: 885px) {
   .booking-btn {
     top: 142px;
-    left: 0;
   }
 
   .be-free-text {
@@ -691,7 +673,6 @@ body {
 
   .booking-btn {
     top: 161px;
-    left: 68px;
   }
 
   .testimonies-text::before {
@@ -708,10 +689,6 @@ body {
 
 /* Styles for screens at 1500px & above */
 @media only screen and (min-width: 1500px) {
-  .booking-btn {
-    left: 104px;
-  }
-
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
@@ -721,10 +698,6 @@ body {
 
 /* Styles for screens at 1700px & above */
 @media only screen and (min-width: 1700px) {
-  .booking-btn {
-    left: 188px;
-  }
-
   .testimony-img-1,
   .testimony-img-2,
   .testimony-img-3 {
