@@ -224,16 +224,6 @@ body {
     font-weight: 500;
   }
 
-  .aboutus-nav-mobile:hover {
-    background-color: white;
-    color: #F9EF23;
-  }
-
-  .aboutus-nav-mobile:active {
-    border: 4px solid #000000;
-    font-size: 30px;
-  }
-
   .section-1 {
     background-color: black;
     background-image: url('./images/background-1-1-1.png');
@@ -403,17 +393,6 @@ body {
     font-weight: 500;
   }
 
-  .aboutus-nav-mobile:hover {
-    background-color: white;
-    color: #F9EF23;
-  }
-
-  .aboutus-nav-mobile:active {
-    border: 4px solid black;
-    color: #F9EF23;
-    font-size: 30px;
-  }
-
   .section-1 {
     background-color:  black;
     background-image: url('./images/background-1-1-1.png');
@@ -526,17 +505,6 @@ body {
 
   .hamburger.active .bar:nth-child(3) { 
     left: 225px;
-  }
-
-  .aboutus-nav-mobile:hover {
-    background-color: white;
-    color: #F9EF23;
-  }
-
-  .aboutus-nav-mobile:active {
-    border: 4px solid black;
-    color: #F9EF23;
-    font-size: 30px;
   }
 
   .section-1 {
