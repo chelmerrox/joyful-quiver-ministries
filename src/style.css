@@ -226,24 +226,30 @@ body {
 
   .section-1 {
     background-color: black;
+    padding: 13px 7px 118px 7px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: 91px;
+  }
+
+  .paragraph-1 p {
+    font-size: 13px;
+  }
+
+  .arrow-img {
     background-image: url('./images/background-1-1-1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 13px 7px 300px 7px;
-  }
-
-  .section-1 .paragraph-1 {
-    margin-top: 30px;
-  }
-
-  .paragraph-1 p {
-    font-size: 12px;
+    padding: 117px;
+    position: relative;
+    top: -100px;
   }
 
   .booking-btn {
     position: relative;
-    top: 85px;
+    top: -100px;
     width: auto;
     font-size: 15px;
   }
@@ -254,8 +260,8 @@ body {
 
   .be-free-text {
     position: relative;
-    top: 174px;
-    font-size: 51px;
+    top: 0;
+    font-size: 54px;
     font-style: italic;
   }
 
@@ -381,24 +387,30 @@ body {
 
   .section-1 {
     background-color:  black;
+    padding: 272px 0px 142px 0px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: -212px;
+  }
+
+  .section-1 .paragraph-1 p {
+    font-size: 13px;
+  }
+
+  .arrow-img {
     background-image: url('./images/background-1-1-1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 272px 0px 216px 0px;
-  }
-
-  .section-1 .paragraph-1 {
-    margin-top: -240px;
-  }
-
-  .section-1 .paragraph-1 {
-    font-size: 11px;
+    padding: 110px;
+    position: relative;
+    top: -91px;
   }
 
   .booking-btn {
     position: relative;
-    top: 72px;
+    top: -98px;
     font-size: 16px;
     width: auto;
   }
@@ -409,8 +421,8 @@ body {
 
   .be-free-text {
     position: relative;
-    top: 115px;
-    font-size: 40px;
+    top: 4px;
+    font-size: 55px;
     font-style: italic;
   }
 
@@ -450,15 +462,23 @@ body {
 
 /* Styles for screens at 370px & above */
 @media only screen and (min-width: 370px) {
+  .section-1 .paragraph-1 p {
+    font-size: 16px;
+  }
+
   .booking-btn {
     position: relative;
-    top: 72px;
+    top: -112px;
     font-size: 16px;
     width: auto;
   }
   
   .booking-btn:active {
     border: 10px solid #F9EF23;
+  }
+
+  .be-free-text {
+    font-size: 61px;
   }
 }
 
@@ -474,11 +494,7 @@ body {
 
   .section-1 {
     background-color: black;
-    background-image: url('./images/background-1-1-1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 300px 7px;
+    padding: 300px 7px 100px 7px;
   }
 
   .section-1 .paragraph-1 {
@@ -486,11 +502,22 @@ body {
   }
 
   .section-1 .paragraph-1 p {
-    font-size: 15px;
+    font-size: 17px;
+  }
+
+  .arrow-img {
+    padding: 150px;
+    top: -127px;
+  }
+
+  .booking-btn {
+    top: -167px;
+    font-size: 19px;
   }
 
   .be-free-text {
-    font-size: 55px;
+    top: -82px;
+    font-size: 63px;
   }
 }
 
@@ -584,11 +611,7 @@ body {
 
   .section-1 {
     background-color: black;
-    background-image: url('./images/background-1-1-1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 382px 50px;
+    padding: 382px 50px 100px 50px;
   }
 
   .section-1 .paragraph-1 {
@@ -599,8 +622,12 @@ body {
     font-size: 22px;
   }
 
+  .arrow-img {
+    padding: 171px;
+  }
+
   .booking-btn {
-    top: 105px;
+    top: -185px;
     font-size: 27px;
   }
 
@@ -635,14 +662,23 @@ body {
 
 /* Styles for screens at 885px & above */
 @media only screen and (min-width: 885px) {
+  .section-1 {
+    padding: 382px 50px 33px 50px;
+  }
+
+  .arrow-img {
+    padding: 217px;
+    top: -210px;
+  }
+
   .booking-btn {
-    top: 142px;
+    top: -288px;
   }
 
   .be-free-text {
     font-size: 81px;
     position: relative;
-    top: 217px;
+    top: -156px;
   }
 
   .testimony-img-1,
@@ -663,7 +699,11 @@ body {
   }
 
   .booking-btn {
-    top: 161px;
+    top: -311px;
+  }
+
+  .be-free-text {
+    top: -179px;
   }
 
   .yellow-line-divider {
