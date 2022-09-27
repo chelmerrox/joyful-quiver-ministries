@@ -224,12 +224,33 @@ body {
     font-weight: 500;
   }
 
-  .section-1 {
+  /* Hides a section that uses this class */
+  .hidden {
+    display: none;
+  }
+
+  /* Only shows when Home navbar mobile menu link is clicked */
+  .section-1.active-1 {
     background-color: black;
     padding: 13px 7px 118px 7px;
   }
 
-  .section-1 .paragraph-1 {
+  /* Only shows when Booking navbar mobile menu link is clicked */
+  .section-1.active-2 {
+    background-image: url("./images/background-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13px 7px 118px 7px;
+  }
+
+  /* Only shows when About Us navbar mobile menu link is clicked */
+  .section-1.active-3 {
+    background-color: #141414;
+    padding: 13px 7px 118px 7px;
+  }
+
+  .paragraph-1 {
     margin-top: 91px;
   }
 
@@ -438,7 +459,36 @@ body {
 
   .section-1 {
     background-color:  black;
+  }
+
+  /* Hides a section that uses this class */
+  .hidden {
+    display: none;
+  }
+
+  /* Only shows when Home navbar mobile menu link is clicked */
+  .section-1.active-1 {
+    background-color: black;
     padding: 272px 0px 142px 0px;
+  }
+
+  /* Only shows when Booking navbar mobile menu link is clicked */
+  .section-1.active-2 {
+    background-image: url("./images/background-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 272px 0px 20px 0px;
+  }
+
+  /* Only shows when About Us navbar mobile menu link is clicked */
+  .section-1.active-3 {
+    background-color: #141414;
+    padding: 272px 0px 20px 0px;
+  }
+
+  .paragraph-1 {
+    margin-top: 91px;
   }
 
   .section-1 .paragraph-1 {
@@ -478,6 +528,11 @@ body {
   }
 
   /* Booking Section */
+  .booking-section {
+    position: relative;
+    top: -160px;
+  }
+
   .get-in-touch-today-text {
     font-size: 40px;
     text-align: center;
@@ -489,6 +544,11 @@ body {
   }
 
   /* About Section */
+  .about-section {
+    position: relative;
+    top: -211px;
+  }
+
   .about-us-text {
     font-size: 40px;
   }
@@ -792,8 +852,23 @@ body {
     color: #F9EF23;
   }
 
-  .section-1 {
-    background-color: black;
+  /* Hides a section that uses this class */
+  .hidden {
+    display: none;
+  }
+
+  /* Only shows when Home navbar mobile menu link is clicked */
+  .section-1.active-1 {
+    padding: 382px 50px 100px 50px;
+  }
+
+  /* Only shows when Booking navbar mobile menu link is clicked */
+  .section-1.active-2 {
+    padding: 382px 50px 100px 50px;
+  }
+
+  /* Only shows when About Us navbar mobile menu link is clicked */
+  .section-1.active-3 {
     padding: 382px 50px 100px 50px;
   }
 
