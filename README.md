@@ -11,6 +11,8 @@
 - JavaScript
 - Bootstrap
 - Webpack
+- TypeForm
+- Canva
 - Git
 
 ## Live Demo
@@ -31,6 +33,8 @@ To get a local copy up and running follow these simple example steps.
 - JavaScript
 - Bootstrap
 - Webpack
+- TypeForm
+- Canva
 - VSCode (or any other text editor)
 - Git
 - GitHub
