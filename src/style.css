@@ -241,13 +241,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 13px 7px 118px 7px;
+    padding: 13px 7px 339px 7px;
   }
 
   /* Only shows when About Us navbar mobile menu link is clicked */
   .section-1.active-3 {
     background-color: #141414;
-    padding: 13px 7px 118px 7px;
+    padding: 13px 7px 236px 7px;
   }
 
   .paragraph-1 {
@@ -298,6 +298,10 @@ body {
   }
 
   /* About Section */
+  .section-2.active-1 {
+    background-color: #141414;
+  }
+
   .about-us-text {
     font-size: 40px;
   }
@@ -355,28 +359,54 @@ body {
     padding: 66px 100px;
   }
 
-  footer {
+  /* Footer 1 */
+  .footer-1.active-1 {
     padding: 10px;
   }
 
-  .ministry-logo-footer {
+  .footer-1 .ministry-logo-footer {
     padding: 23px;
   }
 
-  .ministry-name-footer {
+  .footer-1 .ministry-name-footer {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 10px;
   }
 
-  .copyright-text {
+  .footer-1 .copyright-text {
     margin-right: 5px;
     font-size: 10px;
   }
 
-  .made-in-fiji-text {
+  .footer-1 .made-in-fiji-text {
     margin-right: 5px;
     font-size: 10px;
+  }
+
+  /* Footer 2 */
+  .footer-2.active-2 {
+    padding: 10px;
+  }
+
+  .footer-2 .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .footer-2 .ministry-name-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-2 .copyright-text-2 {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 8px;
   }
 }
 
@@ -478,7 +508,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 272px 0px 20px 0px;
+    padding: 272px 0px 103px 0px;
   }
 
   /* Only shows when About Us navbar mobile menu link is clicked */
@@ -530,7 +560,7 @@ body {
   /* Booking Section */
   .booking-section {
     position: relative;
-    top: -160px;
+    top: -214px;
   }
 
   .get-in-touch-today-text {
@@ -546,7 +576,7 @@ body {
   /* About Section */
   .about-section {
     position: relative;
-    top: -211px;
+    top: -214px;
   }
 
   .about-us-text {
@@ -588,6 +618,10 @@ body {
   }
 
   /* Testimonies Section */
+  .section-2.active-1 {
+    background-color: #141414;
+  }
+
   .yellow-line-divider {
     content: '';
     display: block;
@@ -606,19 +640,45 @@ body {
     padding: 86px 100px;
   }
  
-  footer  {
+  /* Footer 1 */
+  .footer-1  {
     padding: 10px;
   }
 
-  .ministry-logo-footer {
+  .footer-1 .ministry-logo-footer {
     padding: 23px;
   }
 
-  .ministry-name-footer,
-  .copyright-text,
-  .made-in-fiji-text {
+  .footer-1 .ministry-name-footer,
+  .footer-1 .copyright-text,
+  .footer-1 .made-in-fiji-text {
     font-size: 12px;
     margin-left: 2px;
+  }
+
+  /* Footer 2 */
+  .footer-2 {
+    padding: 10px;
+  }
+
+  .footer-2 .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .footer-2 .ministry-name-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-2 .copyright-text-2 {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 9.5px;
   }
 }
 
@@ -656,6 +716,10 @@ body {
 
 /* Styles for screens at 390px & above */
 @media only screen and (min-width: 390px) {
+  .nav .ministry-name-nav {
+    font-size: 19px;
+  }
+  
   .hamburger.active .bar:nth-child(1) {
     left: 225px;
   }
@@ -778,14 +842,31 @@ body {
     padding: 142px;
   }
 
-  footer {
+  /* Footer 1 */
+  .footer-1 {
     padding: 26px;
   }
 
-  .ministry-name-footer, 
-  .copyright-text, 
-  .made-in-fiji-text {
+  .footer-1 .ministry-name-footer, 
+  .footer-1 .copyright-text, 
+  .footer-1 .made-in-fiji-text {
     font-size: 13px;
+  }
+
+  /* Footer 2 */
+  .footer-2 {
+    padding: 26px;
+  }
+
+  .footer-2 .ministry-name-footer,
+  .footer-2 .copyright-text-2 {
+    margin-right: 5px;
+    font-size: 13px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 12px;
   }
 }
 
@@ -893,7 +974,18 @@ body {
     font-size: 81px;
   }
 
+  /* Booking Section */
+  .booking-section {
+    position: relative;
+    top: -249px;
+  }
+
   /* About Section */
+  .about-section {
+    position: relative;
+    top: -260px;
+  }
+
   .about-us-text {
     font-size: 60px;
   }
@@ -929,14 +1021,30 @@ body {
     padding: 220px;
   }
 
-  .ministry-logo-footer {
+  /* Footer 1 */
+  .footer-1 .ministry-logo-footer {
     padding: 31px;
   }
 
-  .ministry-name-footer, 
-  .copyright-text, 
-  .made-in-fiji-text {
+  .footer-1 .ministry-name-footer, 
+  .footer-1 .copyright-text, 
+  .footer-1 .made-in-fiji-text {
     font-size: 18px;
+  }
+
+  /* Footer 2 */
+ .footer-2 .ministry-logo-footer {
+    padding: 31px;
+  }
+
+  .footer-2 .ministry-name-footer,
+  .footer-2 .copyright-text-2 {
+    font-size: 18px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 16px;
   }
 }
 
@@ -961,7 +1069,18 @@ body {
     top: -156px;
   }
 
+  /* Booking Section */
+  .booking-section {
+    position: relative;
+    top: -249px;
+  }
+
   /* About Section */
+  .about-section {
+    position: relative;
+    top: -272px;
+  }
+
   .about-us-text {
     font-size: 60px;
   }

@@ -1,6 +1,14 @@
 import './style.css';
 import { hamburger, openMenu, closeMenu } from './modules/mobile-menu.js';
-import { navMenuMobileLinks, sectionOne, homepageSection, bookASessionBtn, bookingSection, aboutSection } from './modules/mobile-menu-and-sections';
+import { navMenuMobileLinks, 
+  sectionOne, 
+  homepageSection,
+  bookASessionBtn, 
+  bookingSection, 
+  aboutSection, 
+  sectionTwo, 
+  footerOne, 
+  footerTwo } from './modules/mobile-menu-and-sections';
 
 // Open Nav Menu for click
 hamburger.addEventListener('click', openMenu);
@@ -23,6 +31,14 @@ navMenuMobileLinks.forEach((link, i) => {
       aboutSection.classList.add('hidden');
       aboutSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
       aboutSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+      sectionTwo.classList.remove('hidden');
+      sectionTwo.classList.add('active-1', 'row', 'px-3', 'py-4');
+      footerOne.classList.add('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+      footerOne.classList.remove('hidden');
+      footerTwo.classList.add('hidden');
+      footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
     } else if (i === 1) { // Clicking the Booking nav mobile menu link shows the booking section
       sectionOne.classList.add('active-2');
       sectionOne.classList.remove('active-1');
@@ -34,6 +50,14 @@ navMenuMobileLinks.forEach((link, i) => {
       aboutSection.classList.add('hidden');
       aboutSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
       aboutSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+      sectionTwo.classList.add('hidden');
+      sectionTwo.classList.remove('active-1', 'row', 'px-3', 'py-4');
+      footerOne.classList.remove('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerOne.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+      footerOne.classList.add('hidden');
+      footerTwo.classList.remove('hidden');
+      footerTwo.classList.add('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerTwo.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
     } else if (i === 2) { // Clicking the About Us nav mobile menu link shows the About section
       sectionOne.classList.add('active-3');
       sectionOne.classList.remove('active-1');
@@ -45,6 +69,14 @@ navMenuMobileLinks.forEach((link, i) => {
       aboutSection.classList.remove('hidden');
       aboutSection.classList.add('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
       aboutSection.classList.add('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+      sectionTwo.classList.add('hidden');
+      sectionTwo.classList.remove('active-1', 'row', 'px-3', 'py-4');
+      footerOne.classList.add('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+      footerOne.classList.remove('hidden');
+      footerTwo.classList.add('hidden');
+      footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
     }
   });
 });
@@ -61,4 +93,12 @@ bookASessionBtn.addEventListener('click', () => {
   aboutSection.classList.add('hidden');
   aboutSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
   aboutSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+  sectionTwo.classList.add('hidden');
+  sectionTwo.classList.remove('active-1', 'row', 'px-3', 'py-4');
+  footerOne.classList.remove('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerOne.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+  footerOne.classList.add('hidden');
+  footerTwo.classList.remove('hidden');
+  footerTwo.classList.add('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 });

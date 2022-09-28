@@ -42,38 +42,40 @@
           </ul>
         </nav>
 
-        <div class="paragraph-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-          <p class="text-center familjen-grotesk-font text-white">You're probably here after visiting Isaiah Saldivar's deliverance map.</p>
-          <p class="text-center familjen-grotesk-font text-white">We assume that you know a little about inner healing and deliverance so we'll get straight to business.</p><br>
-          <p class="text-center familjen-grotesk-font text-white">Are you a Christian struggling with sin despite your prayers & fasting?</p>
-          <p class="text-center familjen-grotesk-font text-white">Are you a non-Christian seeking freedom from demonization?</p>
-          <p class="text-center familjen-grotesk-font text-white">Are there patterns of stagnation, addiction, relationship breakdown or financial difficulties in your family?</p>
-          <p class="text-center familjen-grotesk-font text-white">Jesus Christ can set you free!</p>
-        </div>
+        <!--Homepage Section-->
+        <div class="homepage-section">
+          <div class="paragraph-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <p class="text-center familjen-grotesk-font text-white">You're probably here after visiting Isaiah Saldivar's deliverance map.</p>
+            <p class="text-center familjen-grotesk-font text-white">We assume that you know a little about inner healing and deliverance so we'll get straight to business.</p><br>
+            <p class="text-center familjen-grotesk-font text-white">Are you a Christian struggling with sin despite your prayers & fasting?</p>
+            <p class="text-center familjen-grotesk-font text-white">Are you a non-Christian seeking freedom from demonization?</p>
+            <p class="text-center familjen-grotesk-font text-white">Are there patterns of stagnation, addiction, relationship breakdown or financial difficulties in your family?</p>
+            <p class="text-center familjen-grotesk-font text-white">Jesus Christ can set you free!</p>
+          </div>
+          
+          <div class="arrow-img"></div>
+  
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex d-sm-flex d-md-flex d-lg-flex flex-rwo flex-sm-row flex-md-row flex-lg-row justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+            <button type="button" class="booking-btn col-4 col-sm-4 col-md-4 col-lg-4 border-0 text-center familjen-grotesk-font font-black bg-yellow mx-5 px-3 py-4">BOOK A SESSION</a>
+          </div>
         
-        <div class="arrow-img"></div>
-
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex d-sm-flex d-md-flex d-lg-flex flex-rwo flex-sm-row flex-md-row flex-lg-row justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
-          <a href="https://y8210xyb7i3.typeform.com/to/lmiCpFUe" target="_blank" class="booking-btn col-4 col-sm-4 col-md-4 col-lg-4 text-decoration-none text-center familjen-grotesk-font font-black bg-yellow mx-5 px-3 py-4">BOOK A SESSION</a>
+          <h2 class="be-free-text text-center anton-font font-white">BE <span class="anton-font font-yellow">FREE</span></h2>
         </div>
-      
-        <h2 class="be-free-text text-center anton-font font-white">BE <span class="anton-font font-yellow">FREE</span></h2>
 
         <!--Booking Section-->
-        <div class="booking-section hidden d-flex d-sm-flex d-md-flex d-lg-flex flex-column flex-sm-column flex-md-column flex-lg-row align-items-center align-items-sm-center align-items-md-center justify-content-lg-around">
+        <div class="booking-section hidden">
           <h2 class="get-in-touch-today-text anton-font fst-italic font-yellow me-lg-5">GET IN TOUCH TODAY</h2>
 
           <!--Standard version of TypeForm-->
           <div class="typeform-container w-100 h-100">
-            <div class="typeform" data-tf-widget="lmiCpFUe" data-tf-iframe-props="title=Booking Form" data-tf-medium="snippet">
-            </div>
+            <div class="typeform" data-tf-widget="lmiCpFUe" data-tf-iframe-props="title=Booking Form" data-tf-medium="snippet"></div>
             <script src="//embed.typeform.com/next/embed.js"></script>
           </div>
         </div>
 
         <!--About Section-->
-        <div class="about-section hidden d-flex d-sm-flex d-md-flex d-lg-flex flex-column flex-sm-column flex-md-column flex-lg-column align-items-center align-items-sm-center align-items-md-center align-items-lg-center">
-          <h2 class="about-us-text anton-font fst-italic font-yellow me-lg-5">ABOUT US</h2>
+        <div class="about-section hidden">
+          <h2 class="about-us-text text-center anton-font fst-italic font-yellow me-lg-5">ABOUT US</h2>
 
           <!-- <div class="paragraph-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"> -->
           <p class="text-center familjen-grotesk-font text-white">We are blessed to assist you in your journey to freedom. We have trained with Pastor Bob Larson's International School of Exorcism & Advanced Academy of Deliverance. Ever a student of the Holy Spirit, we have also trained with other ministries. All glory belongs to God in the name of Jesus Christ!</p>
@@ -104,7 +106,7 @@
         </div>
       </section>
 
-      <section class="section-2 row bg-grey px-3 py-4">
+      <section class="section-2 active-1">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex d-sm-flex d-md-flex d-lg-flex flex-row flex-sm-row flex-md-row flex-lg-row justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
           <div class="yellow-line-divider"></div>
         </div>
@@ -141,7 +143,8 @@
       </section>
     </main>
 
-    <footer class="bg-yellow d-flex d-sm-flex d-md-flex d-lg-flex flex-row flex-sm-row flex-md-row flex-lg-row justify-content-around  justify-content-sm-around justify-content-md-around justify-content-lg-around align-items-center">
+    <!--Only shows in Homepage & About Section-->
+    <footer class="footer-1 active-1 bg-yellow d-flex d-sm-flex d-md-flex d-lg-flex flex-row flex-sm-row flex-md-row flex-lg-row justify-content-around justify-content-sm-around justify-content-md-around justify-content-lg-around align-items-center">
       <a href="#home" class="d-flex d-sm-flex d-md-flex flex-row flex-sm-row flex-md-row align-items-center align-items-sm-center align-items-md-center text-decoration-none">
         <div class="ministry-logo-footer rounded-circle"></div>
         <p class="ministry-name-footer anton-font text-dark mt-2">HOPE IN CHRIST MINISTRY</p>
@@ -150,6 +153,21 @@
       <p class="copyright-text fw-bold text-dark familjen-grotesk-font">&copy; <span class="text-dark" id="date"><script>document.getElementById('date').innerHTML = new Date().getFullYear();</script></span> Aver Labs. All rights reserved.</p>
       
       <p class="made-in-fiji-text fw-bold text-dark familjen-grotesk-font">Made with 🤍 in Fiji.</p>
+    </footer>
+
+    <!--Only shows in Booking Section-->
+    <footer class="footer-2 hidden">
+      <a href="#home" class="d-flex d-sm-flex d-md-flex flex-row flex-sm-row flex-md-row align-items-center align-items-sm-center align-items-md-center text-decoration-none">
+        <div class="ministry-logo-footer rounded-circle"></div>
+        <p class="ministry-name-footer anton-font text-dark mt-2">HOPE IN CHRIST MINISTRY</p>
+      </a>
+
+      <p class="copyright-text-2 fw-bold text-dark familjen-grotesk-font">&copy; <span class="text-dark" id="date-2"><script>document.getElementById('date-2').innerHTML = new Date().getFullYear();</script></span> Aver Labs. All rights reserved.</p>
+
+      <div class="d-block d-sm-block d-md-block d-lg-block">
+        <p class="email-address-text anton-font text-dark fw-bolder fst-italic">EMAIL ADDRESS</p>
+        <p class="email-address familjen-grotesk-font text-dark fw-bolder">contactus@hopeinchristministry.org</p>
+      </div>
     </footer>
     <!--Boostrap script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
