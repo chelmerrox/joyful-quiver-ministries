@@ -245,7 +245,7 @@ eval("module.exports = __webpack_require__.p + \"734ed9f3651ac4860c13.png\";\n\n
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"1009b8b051e21dddc746.svg\";\n\n//# sourceURL=webpack://hope-in-christ-ministry/./src/images/ministry-logo.svg?");
+eval("module.exports = __webpack_require__.p + \"c5146db5f756588e4a84.svg\";\n\n//# sourceURL=webpack://hope-in-christ-ministry/./src/images/ministry-logo.svg?");
 
 /***/ })
 
