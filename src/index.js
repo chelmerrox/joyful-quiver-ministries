@@ -1,6 +1,8 @@
 import './style.css';
 import { hamburger, openMenu, closeMenu } from './modules/mobile-menu.js';
-import { navMenuMobileLinks, 
+import { logoandnameNav,
+  navMenuMobileLinks, 
+  navDesktopLinks,
   sectionOne, 
   homepageSection,
   bookASessionBtn, 
@@ -8,8 +10,62 @@ import { navMenuMobileLinks,
   aboutSection, 
   sectionTwo, 
   footerOne, 
-  footerTwo } from './modules/mobile-menu-and-sections.js';
-import  navDesktopLinks  from './modules/desktop-navbar-and-sections.js';
+  footerTwo,
+  logoandnameFooter1, 
+  logoandnameFooter2 } from './modules/variable-declarations.js';
+
+/* Clicking on the ministry logo & name in navbar (for all screens) shows the homepage */ 
+logoandnameNav.addEventListener('click', () => {
+  // For mobile & tablets
+  navMenuMobileLinks[1].style.removeProperty('border-bottom');  // Booking navbar mobile link
+  navMenuMobileLinks[1].style.removeProperty('padding-bottom');
+  navMenuMobileLinks[2].style.removeProperty('border-bottom');  // About navbar mobile link
+  navMenuMobileLinks[2].style.removeProperty('padding-bottom');
+  navMenuMobileLinks[0].classList.add('active-1'); // Home navbar mobile link
+  sectionOne.classList.add('active-1');
+  sectionOne.classList.remove('active-2');
+  sectionOne.classList.remove('active-3');
+  homepageSection.classList.remove('hidden');
+  bookingSection.classList.add('hidden');
+  bookingSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-row');
+  bookingSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'justify-content-lg-around', 'mt-5');
+  aboutSection.classList.add('hidden');
+  aboutSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
+  aboutSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+  sectionTwo.classList.remove('hidden');
+  sectionTwo.classList.add('active-1', 'row', 'px-3', 'py-4');
+  footerOne.classList.add('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+  footerOne.classList.remove('hidden');
+  footerTwo.classList.add('hidden');
+  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+
+  // For Desktops
+  navDesktopLinks[1].style.removeProperty('border');  // Booking navbar desktop button
+  navDesktopLinks[1].style.removeProperty('color');
+  navDesktopLinks[2].style.removeProperty('border');  // About navbar desktop button
+  navDesktopLinks[2].style.removeProperty('color');
+  navDesktopLinks[0].classList.add('active-1'); // Home navbar desktop button
+  sectionOne.classList.add('active-1');
+  sectionOne.classList.remove('active-2');
+  sectionOne.classList.remove('active-3');
+  homepageSection.classList.remove('hidden');
+  bookingSection.classList.add('hidden');
+  bookingSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-row');
+  bookingSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'justify-content-lg-around', 'mt-5');
+  aboutSection.classList.add('hidden');
+  aboutSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
+  aboutSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+  sectionTwo.classList.remove('hidden');
+  sectionTwo.classList.add('active-1', 'row', 'px-3', 'py-4');
+  footerOne.classList.add('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+  footerOne.classList.remove('hidden');
+  footerTwo.classList.add('hidden');
+  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+});
 
 // Open Nav Menu for click
 hamburger.addEventListener('click', openMenu);
@@ -207,3 +263,111 @@ bookASessionBtn.addEventListener('click', () => {
   footerTwo.classList.add('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
   footerTwo.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 });
+
+/* Clicking on the ministry logo & name in footer 1 of homepage/about sections (for all screens) shows the homepage */ 
+logoandnameFooter1.addEventListener('click', () => {
+  // For mobile & tablets
+  navMenuMobileLinks[1].style.removeProperty('border-bottom');  // Booking navbar mobile link
+  navMenuMobileLinks[1].style.removeProperty('padding-bottom');
+  navMenuMobileLinks[2].style.removeProperty('border-bottom');  // About navbar mobile link
+  navMenuMobileLinks[2].style.removeProperty('padding-bottom');
+  navMenuMobileLinks[0].classList.add('active-1'); // Home navbar mobile link
+  sectionOne.classList.add('active-1');
+  sectionOne.classList.remove('active-2');
+  sectionOne.classList.remove('active-3');
+  homepageSection.classList.remove('hidden');
+  bookingSection.classList.add('hidden');
+  bookingSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-row');
+  bookingSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'justify-content-lg-around', 'mt-5');
+  aboutSection.classList.add('hidden');
+  aboutSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
+  aboutSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+  sectionTwo.classList.remove('hidden');
+  sectionTwo.classList.add('active-1', 'row', 'px-3', 'py-4');
+  footerOne.classList.add('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+  footerOne.classList.remove('hidden');
+  footerTwo.classList.add('hidden');
+  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+
+  // For Desktops
+  navDesktopLinks[1].style.removeProperty('border');  // Booking navbar desktop button
+  navDesktopLinks[1].style.removeProperty('color');
+  navDesktopLinks[2].style.removeProperty('border');  // About navbar desktop button
+  navDesktopLinks[2].style.removeProperty('color');
+  navDesktopLinks[0].classList.add('active-1'); // Home navbar desktop button
+  sectionOne.classList.add('active-1');
+  sectionOne.classList.remove('active-2');
+  sectionOne.classList.remove('active-3');
+  homepageSection.classList.remove('hidden');
+  bookingSection.classList.add('hidden');
+  bookingSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-row');
+  bookingSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'justify-content-lg-around', 'mt-5');
+  aboutSection.classList.add('hidden');
+  aboutSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
+  aboutSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+  sectionTwo.classList.remove('hidden');
+  sectionTwo.classList.add('active-1', 'row', 'px-3', 'py-4');
+  footerOne.classList.add('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+  footerOne.classList.remove('hidden');
+  footerTwo.classList.add('hidden');
+  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+});
+
+/* Clicking on the ministry logo & name in footer 2 for bookin section (for all screens) shows the homepage */ 
+logoandnameFooter2.addEventListener('click', () => {
+  // For mobile & tablets
+  navMenuMobileLinks[1].style.removeProperty('border-bottom');  // Booking navbar mobile link
+  navMenuMobileLinks[1].style.removeProperty('padding-bottom');
+  navMenuMobileLinks[2].style.removeProperty('border-bottom');  // About navbar mobile link
+  navMenuMobileLinks[2].style.removeProperty('padding-bottom');
+  navMenuMobileLinks[0].classList.add('active-1'); // Home navbar mobile link
+  sectionOne.classList.add('active-1');
+  sectionOne.classList.remove('active-2');
+  sectionOne.classList.remove('active-3');
+  homepageSection.classList.remove('hidden');
+  bookingSection.classList.add('hidden');
+  bookingSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-row');
+  bookingSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'justify-content-lg-around', 'mt-5');
+  aboutSection.classList.add('hidden');
+  aboutSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
+  aboutSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+  sectionTwo.classList.remove('hidden');
+  sectionTwo.classList.add('active-1', 'row', 'px-3', 'py-4');
+  footerOne.classList.add('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+  footerOne.classList.remove('hidden');
+  footerTwo.classList.add('hidden');
+  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+
+  // For Desktops
+  navDesktopLinks[1].style.removeProperty('border');  // Booking navbar desktop button
+  navDesktopLinks[1].style.removeProperty('color');
+  navDesktopLinks[2].style.removeProperty('border');  // About navbar desktop button
+  navDesktopLinks[2].style.removeProperty('color');
+  navDesktopLinks[0].classList.add('active-1'); // Home navbar desktop button
+  sectionOne.classList.add('active-1');
+  sectionOne.classList.remove('active-2');
+  sectionOne.classList.remove('active-3');
+  homepageSection.classList.remove('hidden');
+  bookingSection.classList.add('hidden');
+  bookingSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-row');
+  bookingSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'justify-content-lg-around', 'mt-5');
+  aboutSection.classList.add('hidden');
+  aboutSection.classList.remove('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
+  aboutSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+  sectionTwo.classList.remove('hidden');
+  sectionTwo.classList.add('active-1', 'row', 'px-3', 'py-4');
+  footerOne.classList.add('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+  footerOne.classList.remove('hidden');
+  footerTwo.classList.add('hidden');
+  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
+});
+
+

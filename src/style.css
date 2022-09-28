@@ -716,12 +716,18 @@ body {
     z-index: 1;
   }
 
+  #logo-and-name-nav {
+    margin-top: 10px;
+    margin-left: 6px;
+  }
+
   .nav .ministry-logo-nav {
-    padding: 33px;
+    padding: 27px;
   }
 
   .nav .ministry-name-nav {
     font-size: 14px;
+    margin-left: 7px;
   }
 
   .hamburger {
@@ -1210,6 +1216,10 @@ body {
 
   .nav .ministry-name-nav {
     font-size: 25px;
+  }
+
+  .hamburger {
+    margin-top: -1px;
   }
 
   .hamburger.active .bar:nth-child(1) {

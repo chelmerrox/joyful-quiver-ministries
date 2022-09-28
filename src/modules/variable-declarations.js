@@ -1,5 +1,9 @@
 /* Variable declarations */
+export const logoandnameNav = document.getElementById('logo-and-name-nav');
+export const logoandnameFooter1 = document.getElementById('logo-and-name-footer-1');
+export const logoandnameFooter2 = document.getElementById('logo-and-name-footer-2');
 export const navMenuMobileLinks = Array.from(document.getElementsByClassName('nav-link-mobile'));
+export const navDesktopLinks = Array.from(document.getElementsByClassName('nav-link-desktop'));
 export const sectionOne = document.querySelector('.section-1');
 export const homepageSection = document.querySelector('.homepage-section'); // Homepage Section
 export const bookASessionBtn = document.querySelector('.booking-btn');
