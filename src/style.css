@@ -77,7 +77,7 @@ body {
 
 .nav .ministry-logo-nav {
   background-color: black;
-  background-image: url('./images/ministry-logo.png');
+  background-image: url('./images/ministry-logo.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -134,7 +134,7 @@ body {
 
 .ministry-logo-footer {
   background-color: black;
-  background-image: url('./images/ministry-logo.png');
+  background-image: url('./images/ministry-logo.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -152,7 +152,7 @@ body {
 
   .nav .ministry-logo-nav {
     background-color: black;
-    background-image: url('./images/ministry-logo.png');
+    background-image: url('./images/ministry-logo.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
