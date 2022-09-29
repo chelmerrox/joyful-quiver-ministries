@@ -6,9 +6,9 @@ const navMenuMobile = document.querySelector('.nav-menu-mobile');
 export const openMenu = () => {
   hamburger.classList.toggle('active');
   navMenuMobile.classList.toggle('active');
-}
+};
 
-export const closeMenu = () => {  
+export const closeMenu = () => {
   hamburger.classList.remove('active');
   navMenuMobile.classList.remove('active');
-}
+};

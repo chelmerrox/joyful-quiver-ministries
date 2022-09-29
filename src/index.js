@@ -1,25 +1,27 @@
 import './style.css';
 import { hamburger, openMenu, closeMenu } from './modules/mobile-menu.js';
-import { logoandnameNav,
-  navMenuMobileLinks, 
+import {
+  logoandnameNav,
+  navMenuMobileLinks,
   navDesktopLinks,
-  sectionOne, 
+  sectionOne,
   homepageSection,
-  bookASessionBtn, 
-  bookingSection, 
-  aboutSection, 
-  sectionTwo, 
-  footerOne, 
+  bookASessionBtn,
+  bookingSection,
+  aboutSection,
+  sectionTwo,
+  footerOne,
   footerTwo,
-  logoandnameFooter1, 
-  logoandnameFooter2 } from './modules/variable-declarations.js';
+  logoandnameFooter1,
+  logoandnameFooter2,
+} from './modules/variable-declarations.js';
 
-/* Clicking on the ministry logo & name in navbar (for all screens) shows the homepage */ 
+/* Clicking on the ministry logo & name in navbar (for all screens) shows the homepage */
 logoandnameNav.addEventListener('click', () => {
   // For mobile & tablets
-  navMenuMobileLinks[1].style.removeProperty('border-bottom');  // Booking navbar mobile link
+  navMenuMobileLinks[1].style.removeProperty('border-bottom'); // Booking navbar mobile link
   navMenuMobileLinks[1].style.removeProperty('padding-bottom');
-  navMenuMobileLinks[2].style.removeProperty('border-bottom');  // About navbar mobile link
+  navMenuMobileLinks[2].style.removeProperty('border-bottom'); // About navbar mobile link
   navMenuMobileLinks[2].style.removeProperty('padding-bottom');
   navMenuMobileLinks[0].classList.add('active-1'); // Home navbar mobile link
   sectionOne.classList.add('active-1');
@@ -38,13 +40,13 @@ logoandnameNav.addEventListener('click', () => {
   footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
   footerOne.classList.remove('hidden');
   footerTwo.classList.add('hidden');
-  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
   footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 
   // For Desktops
-  navDesktopLinks[1].style.removeProperty('border');  // Booking navbar desktop button
+  navDesktopLinks[1].style.removeProperty('border'); // Booking navbar desktop button
   navDesktopLinks[1].style.removeProperty('color');
-  navDesktopLinks[2].style.removeProperty('border');  // About navbar desktop button
+  navDesktopLinks[2].style.removeProperty('border'); // About navbar desktop button
   navDesktopLinks[2].style.removeProperty('color');
   navDesktopLinks[0].classList.add('active-1'); // Home navbar desktop button
   sectionOne.classList.add('active-1');
@@ -63,7 +65,7 @@ logoandnameNav.addEventListener('click', () => {
   footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
   footerOne.classList.remove('hidden');
   footerTwo.classList.add('hidden');
-  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
   footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 });
 
@@ -77,10 +79,10 @@ document.querySelectorAll('.nav-link-mobile').forEach((n) => n.addEventListener(
 navMenuMobileLinks.forEach((link, i) => {
   link.addEventListener('click', () => {
     // Clicking the Home nav mobile menu link shows the homepage section
-    if (i === 0){
-      navMenuMobileLinks[i + 1].style.removeProperty('border-bottom');  // Booking navbar mobile link
+    if (i === 0) {
+      navMenuMobileLinks[i + 1].style.removeProperty('border-bottom'); // Booking navbar mobile link
       navMenuMobileLinks[i + 1].style.removeProperty('padding-bottom');
-      navMenuMobileLinks[i + 2].style.removeProperty('border-bottom');  // About navbar mobile link
+      navMenuMobileLinks[i + 2].style.removeProperty('border-bottom'); // About navbar mobile link
       navMenuMobileLinks[i + 2].style.removeProperty('padding-bottom');
       link.classList.add('active-1'); // Home navbar mobile link
       sectionOne.classList.add('active-1');
@@ -99,11 +101,11 @@ navMenuMobileLinks.forEach((link, i) => {
       footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
       footerOne.classList.remove('hidden');
       footerTwo.classList.add('hidden');
-      footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
       footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
     } else if (i === 1) { // Clicking the Booking nav mobile menu link shows the booking section
       navMenuMobileLinks[i - 1].classList.remove('active-1'); // Home navbar mobile link
-      navMenuMobileLinks[i + 1].style.removeProperty('border-bottom');  // About navbar mobile link
+      navMenuMobileLinks[i + 1].style.removeProperty('border-bottom'); // About navbar mobile link
       navMenuMobileLinks[i + 1].style.removeProperty('padding-bottom');
       link.style.borderBottom = '2px solid black'; // Booking navbar mobile link
       link.style.paddingBottom = '7px';
@@ -123,11 +125,11 @@ navMenuMobileLinks.forEach((link, i) => {
       footerOne.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
       footerOne.classList.add('hidden');
       footerTwo.classList.remove('hidden');
-      footerTwo.classList.add('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerTwo.classList.add('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
       footerTwo.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
     } else if (i === 2) { // Clicking the About Us nav mobile menu link shows the About section
       navMenuMobileLinks[i - 2].classList.remove('active-1'); // Home navbar mobile link
-      navMenuMobileLinks[i - 1].style.removeProperty('border-bottom');  // Booking navbar mobile link
+      navMenuMobileLinks[i - 1].style.removeProperty('border-bottom'); // Booking navbar mobile link
       navMenuMobileLinks[i - 1].style.removeProperty('padding-bottom');
       link.style.borderBottom = '2px solid black'; // About navbar mobile link
       link.style.paddingBottom = '7px';
@@ -147,7 +149,7 @@ navMenuMobileLinks.forEach((link, i) => {
       footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
       footerOne.classList.remove('hidden');
       footerTwo.classList.add('hidden');
-      footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
       footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
     }
   });
@@ -156,10 +158,10 @@ navMenuMobileLinks.forEach((link, i) => {
 // Clicking on the navbar desktop links to show specific sections
 navDesktopLinks.forEach((link, j) => {
   link.addEventListener('click', () => {
-    if (j === 0){
-      navDesktopLinks[j + 1].style.removeProperty('border');  // Booking navbar desktop button
+    if (j === 0) {
+      navDesktopLinks[j + 1].style.removeProperty('border'); // Booking navbar desktop button
       navDesktopLinks[j + 1].style.removeProperty('color');
-      navDesktopLinks[j + 2].style.removeProperty('border');  // About navbar desktop button
+      navDesktopLinks[j + 2].style.removeProperty('border'); // About navbar desktop button
       navDesktopLinks[j + 2].style.removeProperty('color');
       link.classList.add('active-1'); // Home navbar desktop button
       sectionOne.classList.add('active-1');
@@ -178,11 +180,11 @@ navDesktopLinks.forEach((link, j) => {
       footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
       footerOne.classList.remove('hidden');
       footerTwo.classList.add('hidden');
-      footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
       footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
     } else if (j === 1) {
       navDesktopLinks[j - 1].classList.remove('active-1'); // Home navbar desktop button
-      navDesktopLinks[j + 1].style.removeProperty('border');  // About navbar desktop button
+      navDesktopLinks[j + 1].style.removeProperty('border'); // About navbar desktop button
       navDesktopLinks[j + 1].style.removeProperty('color');
       link.style.border = '2px solid yellow'; // Booking navbar desktop button
       link.style.color = 'yellow';
@@ -202,11 +204,11 @@ navDesktopLinks.forEach((link, j) => {
       footerOne.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
       footerOne.classList.add('hidden');
       footerTwo.classList.remove('hidden');
-      footerTwo.classList.add('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerTwo.classList.add('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
       footerTwo.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
     } else if (j === 2) {
       navDesktopLinks[j - 2].classList.remove('active-1'); // Home navbar desktop button
-      navDesktopLinks[j - 1].style.removeProperty('border');  // Booking navbar desktop button
+      navDesktopLinks[j - 1].style.removeProperty('border'); // Booking navbar desktop button
       navDesktopLinks[j - 1].style.removeProperty('color');
       link.style.border = '2px solid yellow'; // About navbar desktop button
       link.style.color = 'yellow';
@@ -226,21 +228,21 @@ navDesktopLinks.forEach((link, j) => {
       footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
       footerOne.classList.remove('hidden');
       footerTwo.classList.add('hidden');
-      footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+      footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
       footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
     }
-  })
+  });
 });
 
 // Clicking the Book a Session button links to the Booking Section
 bookASessionBtn.addEventListener('click', () => {
   navMenuMobileLinks[0].classList.remove('active-1'); // Home navbar mobile link
-  navMenuMobileLinks[2].style.removeProperty('border-bottom');  // About navbar mobile link
+  navMenuMobileLinks[2].style.removeProperty('border-bottom'); // About navbar mobile link
   navMenuMobileLinks[2].style.removeProperty('padding-bottom');
   navMenuMobileLinks[1].style.borderBottom = '2px solid black'; // Booking navbar mobile link
   navMenuMobileLinks[1].style.paddingBottom = '7px';
   navDesktopLinks[0].classList.remove('active-1'); // Home navbar desktop button
-  navDesktopLinks[2].style.removeProperty('border');  // About navbar desktop button
+  navDesktopLinks[2].style.removeProperty('border'); // About navbar desktop button
   navDesktopLinks[2].style.removeProperty('color');
   navDesktopLinks[1].style.border = '2px solid yellow'; // Booking navbar desktop button
   navDesktopLinks[1].style.color = 'yellow';
@@ -260,16 +262,17 @@ bookASessionBtn.addEventListener('click', () => {
   footerOne.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
   footerOne.classList.add('hidden');
   footerTwo.classList.remove('hidden');
-  footerTwo.classList.add('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.add('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
   footerTwo.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 });
 
-/* Clicking on the ministry logo & name in footer 1 of homepage/about sections (for all screens) shows the homepage */ 
+// Clicking on the ministry logo & name in footer 1 of
+// homepage/about sections (for all screens) shows the homepage
 logoandnameFooter1.addEventListener('click', () => {
   // For mobile & tablets
-  navMenuMobileLinks[1].style.removeProperty('border-bottom');  // Booking navbar mobile link
+  navMenuMobileLinks[1].style.removeProperty('border-bottom'); // Booking navbar mobile link
   navMenuMobileLinks[1].style.removeProperty('padding-bottom');
-  navMenuMobileLinks[2].style.removeProperty('border-bottom');  // About navbar mobile link
+  navMenuMobileLinks[2].style.removeProperty('border-bottom'); // About navbar mobile link
   navMenuMobileLinks[2].style.removeProperty('padding-bottom');
   navMenuMobileLinks[0].classList.add('active-1'); // Home navbar mobile link
   sectionOne.classList.add('active-1');
@@ -288,13 +291,13 @@ logoandnameFooter1.addEventListener('click', () => {
   footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
   footerOne.classList.remove('hidden');
   footerTwo.classList.add('hidden');
-  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
   footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 
   // For Desktops
-  navDesktopLinks[1].style.removeProperty('border');  // Booking navbar desktop button
+  navDesktopLinks[1].style.removeProperty('border'); // Booking navbar desktop button
   navDesktopLinks[1].style.removeProperty('color');
-  navDesktopLinks[2].style.removeProperty('border');  // About navbar desktop button
+  navDesktopLinks[2].style.removeProperty('border'); // About navbar desktop button
   navDesktopLinks[2].style.removeProperty('color');
   navDesktopLinks[0].classList.add('active-1'); // Home navbar desktop button
   sectionOne.classList.add('active-1');
@@ -313,16 +316,17 @@ logoandnameFooter1.addEventListener('click', () => {
   footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
   footerOne.classList.remove('hidden');
   footerTwo.classList.add('hidden');
-  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
   footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 });
 
-/* Clicking on the ministry logo & name in footer 2 for bookin section (for all screens) shows the homepage */ 
+// Clicking on the ministry logo & name in footer 2 for
+// booking section (for all screens) shows the homepage
 logoandnameFooter2.addEventListener('click', () => {
   // For mobile & tablets
-  navMenuMobileLinks[1].style.removeProperty('border-bottom');  // Booking navbar mobile link
+  navMenuMobileLinks[1].style.removeProperty('border-bottom'); // Booking navbar mobile link
   navMenuMobileLinks[1].style.removeProperty('padding-bottom');
-  navMenuMobileLinks[2].style.removeProperty('border-bottom');  // About navbar mobile link
+  navMenuMobileLinks[2].style.removeProperty('border-bottom'); // About navbar mobile link
   navMenuMobileLinks[2].style.removeProperty('padding-bottom');
   navMenuMobileLinks[0].classList.add('active-1'); // Home navbar mobile link
   sectionOne.classList.add('active-1');
@@ -341,13 +345,13 @@ logoandnameFooter2.addEventListener('click', () => {
   footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
   footerOne.classList.remove('hidden');
   footerTwo.classList.add('hidden');
-  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
   footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 
   // For Desktops
-  navDesktopLinks[1].style.removeProperty('border');  // Booking navbar desktop button
+  navDesktopLinks[1].style.removeProperty('border'); // Booking navbar desktop button
   navDesktopLinks[1].style.removeProperty('color');
-  navDesktopLinks[2].style.removeProperty('border');  // About navbar desktop button
+  navDesktopLinks[2].style.removeProperty('border'); // About navbar desktop button
   navDesktopLinks[2].style.removeProperty('color');
   navDesktopLinks[0].classList.add('active-1'); // Home navbar desktop button
   sectionOne.classList.add('active-1');
@@ -366,8 +370,6 @@ logoandnameFooter2.addEventListener('click', () => {
   footerOne.classList.add('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
   footerOne.classList.remove('hidden');
   footerTwo.classList.add('hidden');
-  footerTwo.classList.remove('active-2','bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
+  footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
   footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 });
-
-
