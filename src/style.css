@@ -1,0 +1,1633 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Familjen+Grotesk:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;  /* for Google Chrome and Apple Safari */
+  -moz-box-sizing: border-box;    /* for Mozilla Firefox */
+  -ms-box-sizing: border-box;   /* for Microsoft's Internet Explorer */
+  box-sizing: border-box;       /* box-sizing is a property allows us to change exactly how the box-model works  */
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+
+  /*  position: relative; */
+  min-height: 100vh;  /* vh (viewport height as unit of measure)) */
+  margin: 0;
+}
+
+.anton-font {
+  font-family: 'Anton', sans-serif;
+}
+
+.familjen-grotesk-font {
+  font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.font-black {
+  color: #000;
+}
+
+.font-yellow {
+  color: #f9ef23;
+}
+
+.font-white {
+  color: white;
+}
+
+.bg-grey {
+  background-color: #141414;
+}
+
+.bg-yellow {
+  background-color: #f9ef23;
+}
+
+.border-black {
+  border: 2px solid black;
+}
+
+.border-yellow {
+  border: 2px solid #f9ef23;
+  border-radius: 10px;
+}
+
+.white-border {
+  border: 2px solid white;
+}
+
+/* Styles for navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -434px;
+}
+
+.nav .ministry-logo-nav {
+  background-image: url('./images/ministry-logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 40px;
+}
+
+.nav-menu-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 29px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimony-img-1 {
+  background-color: white;
+  background-image: url('./images/1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+
+.testimony-img-2 {
+  background-color: #f9ef23;
+  background-image: url('./images/2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+
+.testimony-img-3 {
+  background-color: white;
+  background-image: url('./images/3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+
+.ministry-logo-footer {
+  background-image: url('./images/ministry-logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 40px;
+}
+
+/* Styles for screens at 252px & below */
+@media only screen and (max-width: 252px) {
+  /* Styles for navbar */
+  #nav {
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+
+  #nav .ministry-logo-nav {
+    background-image: url('./images/ministry-logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 19px;
+  }
+
+  #nav .ministry-name-nav {
+    margin-left: 1px;
+    font-size: 10px;
+  }
+
+  #hamburger {
+    display: block;
+    margin-top: -8px;
+    margin-right: 5px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    position: fixed;
+    top: 27.5px;
+    left: 165px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    position: fixed;
+    top: 44px;
+    left: 165px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .nav-menu-mobile {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f9ef23;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(9px);
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+    padding-top: 154px;
+  }
+
+  .nav-item-mobile {
+    margin: 16px 0;
+  }
+
+  .nav-menu-mobile.active {
+    right: 0;
+  }
+
+  .nav .nav-item-mobile .nav-link-mobile {
+    color: #1a2236;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  /* Home navbar mobile link */
+  .nav-link-mobile:nth-child(1).active-1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 7px;
+  }
+
+  /* Hides a section that uses this class */
+  .hidden {
+    display: none;
+  }
+
+  /* Only shows when Home navbar mobile menu link is clicked */
+  .section-1.active-1 {
+    background-color: black;
+    padding: 13px 7px 118px 7px;
+  }
+
+  /* Only shows when Booking navbar mobile menu link is clicked */
+  .section-1.active-2 {
+    background-image: url("./images/background-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13px 7px 339px 7px;
+  }
+
+  /* Only shows when About Us navbar mobile menu link is clicked */
+  .section-1.active-3 {
+    background-color: #141414;
+    padding: 13px 7px 236px 7px;
+  }
+
+  .paragraph-1 {
+    margin-top: 91px;
+  }
+
+  .paragraph-1 .sentence {
+    font-size: 13px;
+  }
+
+  #arrow-img {
+    background-image: url('./images/background-1-1-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 86px;
+    position: relative;
+    top: -54px;
+    left: -1px;
+  }
+
+  .booking-btn {
+    position: relative;
+    top: -100px;
+    width: auto;
+    font-size: 15px;
+  }
+
+  .booking-btn:active {
+    border: 10px solid #f9ef23;
+  }
+
+  #be-free-text {
+    position: relative;
+    top: 0;
+    font-size: 51px;
+    font-style: italic;
+  }
+
+  /* Booking Section */
+  .get-in-touch-today-text {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .typeform {
+    width: 100%;
+    height: 759px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 40px;
+  }
+
+  .about-section .paragraph {
+    font-size: 13px;
+  }
+
+  .healing-img {
+    background-image: url('./images/healing.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px;
+  }
+
+  .deliverance-img {
+    background-image: url('./images/deliverance.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px;
+  }
+
+  .discipleship-img {
+    background-image: url('./images/discipleship.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 33px;
+    position: relative;
+    top: 78px;
+  }
+
+  /* Testimonies Section */
+  .section-2.active-1 {
+    background-color: #141414;
+  }
+
+  .yellow-line-divider {
+    content: '';
+    display: block;
+    width: 139px;
+    height: 5px;
+    background: #f9ef23;
+  }
+
+  #testimonies-text {
+    font-size: 32px;
+    position: relative;
+    top: -19px;
+  }
+
+  #carousel-inner {
+    position: relative;
+    left: -30px;
+    width: 127%;
+    overflow: hidden;
+  }
+
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 70px 110px;
+  }
+
+  /* Footer 1 */
+  .footer-1.active-1 {
+    padding: 10px;
+  }
+
+  .footer-1 .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .footer-1 .ministry-name-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-1 .copyright-text {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-1 .made-in-fiji-text {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  /* Footer 2 */
+  .footer-2.active-2 {
+    padding: 10px;
+  }
+
+  .footer-2 .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .footer-2 .ministry-name-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-2 .copyright-text-2 {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 8px;
+  }
+}
+
+/* Styles for screens at 319px & below */
+@media only screen and (max-width: 319px) {
+  /* Styles for navbar */
+  .nav {
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+
+  .nav .ministry-logo-nav {
+    background-image: url('./images/ministry-logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 19px;
+  }
+
+  .nav .ministry-name-nav {
+    margin-left: 1px;
+    font-size: 12px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 9px;
+    margin-right: 14px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    position: fixed;
+    top: 27.5px;
+    left: 165px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    position: fixed;
+    top: 44px;
+    left: 165px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .nav-menu-mobile {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f9ef23;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(9px);
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+    padding-top: 154px;
+  }
+
+  .nav-item-mobile {
+    margin: 16px 0;
+  }
+
+  .nav-menu-mobile.active {
+    right: 0;
+  }
+
+  .nav .nav-item-mobile .nav-link-mobile {
+    color: #1a2236;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  /* Home navbar mobile link */
+  .nav-link-mobile:nth-child(1).active-1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 7px;
+  }
+
+  /* Hides a section that uses this class */
+  .hidden {
+    display: none;
+  }
+
+  /* Only shows when Home navbar mobile menu link is clicked */
+  .section-1.active-1 {
+    background-color: black;
+    padding: 13px 7px 118px 7px;
+  }
+
+  /* Only shows when Booking navbar mobile menu link is clicked */
+  .section-1.active-2 {
+    background-image: url("./images/background-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13px 7px 339px 7px;
+  }
+
+  /* Only shows when About Us navbar mobile menu link is clicked */
+  .section-1.active-3 {
+    background-color: #141414;
+    padding: 13px 7px 236px 7px;
+  }
+
+  .paragraph-1 {
+    margin-top: 91px;
+  }
+
+  .paragraph-1 .sentence {
+    font-size: 13px;
+  }
+
+  .arrow-img {
+    background-image: url('./images/background-1-1-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 117px;
+    position: relative;
+    top: -100px;
+  }
+
+  .booking-btn {
+    position: relative;
+    top: -100px;
+    width: auto;
+    font-size: 15px;
+  }
+
+  .booking-btn:active {
+    border: 10px solid #f9ef23;
+  }
+
+  .be-free-text {
+    position: relative;
+    top: 0;
+    font-size: 54px;
+    font-style: italic;
+  }
+
+  /* Booking Section */
+  .get-in-touch-today-text {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .typeform {
+    width: 100%;
+    height: 759px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 40px;
+  }
+
+  .about-section .paragraph {
+    font-size: 13px;
+  }
+
+  .healing-img {
+    background-image: url('./images/healing.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px;
+  }
+
+  .deliverance-img {
+    background-image: url('./images/deliverance.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px;
+  }
+
+  .discipleship-img {
+    background-image: url('./images/discipleship.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 33px;
+    position: relative;
+    top: 78px;
+  }
+
+  /* Testimonies Section */
+  .section-2.active-1 {
+    background-color: #141414;
+  }
+
+  .yellow-line-divider {
+    content: '';
+    display: block;
+    width: 139px;
+    height: 5px;
+    background: #f9ef23;
+  }
+
+  .testimonies-text {
+    font-size: 38px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 66px 100px;
+  }
+
+  /* Footer 1 */
+  .footer-1.active-1 {
+    padding: 10px;
+  }
+
+  .footer-1 .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .footer-1 .ministry-name-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-1 .copyright-text {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-1 .made-in-fiji-text {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  /* Footer 2 */
+  .footer-2.active-2 {
+    padding: 10px;
+  }
+
+  .footer-2 .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .footer-2 .ministry-name-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-2 .copyright-text-2 {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 8px;
+  }
+}
+
+/* Styles for screens at 320px & above */
+@media only screen and (min-width: 320px) {
+  /* Styles for navbar */
+  .nav {
+    position: relative;
+    top: -272px;
+    z-index: 1;
+  }
+
+  #logo-and-name-nav {
+    margin-top: 10px;
+    margin-left: 6px;
+  }
+
+  .nav .ministry-logo-nav {
+    padding: 27px;
+  }
+
+  .nav .ministry-name-nav {
+    font-size: 14px;
+    margin-left: 7px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 9px;
+    margin-right: 14px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    position: fixed;
+    top: 21.5px;
+    left: 181px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    position: fixed;
+    top: 38px;
+    left: 181px;
+    z-index: 10;
+    background-color: black;
+  }
+
+  .nav-menu-mobile {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f9ef23;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(9px);
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+    padding-top: 220px;
+  }
+
+  .nav-item-mobile {
+    margin: 16px 0;
+  }
+
+  .nav-menu-mobile.active {
+    right: 0;
+  }
+
+  .nav .nav-item-mobile .nav-link-mobile {
+    color: #1a2236;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  /* Home navbar mobile link */
+  .nav-link-mobile:nth-child(1).active-1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 7px;
+  }
+
+  /* Hides a section that uses this class */
+  .hidden {
+    display: none;
+  }
+
+  /* Only shows when Home navbar mobile menu link is clicked */
+  .section-1.active-1 {
+    background-color: black;
+    padding: 272px 0 142px 0;
+  }
+
+  /* Only shows when Booking navbar mobile menu link is clicked */
+  .section-1.active-2 {
+    background-image: url("./images/background-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 272px 0 103px 0;
+  }
+
+  /* Only shows when About Us navbar mobile menu link is clicked */
+  .section-1.active-3 {
+    background-color: #141414;
+    padding: 272px 0 20px 0;
+  }
+
+  .paragraph-1 {
+    margin-top: 91px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: -212px;
+  }
+
+  .section-1 .paragraph-1 .sentence {
+    font-size: 13px;
+  }
+
+  .arrow-img {
+    background-image: url('./images/background-1-1-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 140px;
+    position: relative;
+    top: -101px;
+  }
+
+  .booking-btn {
+    position: relative;
+    top: -98px;
+    font-size: 16px;
+    width: auto;
+  }
+
+  .booking-btn:active {
+    border: 10px solid #f9ef23;
+  }
+
+  .be-free-text {
+    position: relative;
+    top: 4px;
+    font-size: 55px;
+    font-style: italic;
+  }
+
+  /* Booking Section */
+  .booking-section {
+    position: relative;
+    top: -214px;
+  }
+
+  .get-in-touch-today-text {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .typeform {
+    width: 100%;
+    height: 759px;
+  }
+
+  /* About Section */
+  .about-section {
+    position: relative;
+    top: -214px;
+  }
+
+  .about-us-text {
+    font-size: 40px;
+  }
+
+  .about-section .paragraph {
+    font-size: 13px;
+  }
+
+  .healing-img {
+    background-image: url('./images/healing.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 132px;
+  }
+
+  .deliverance-img {
+    background-image: url('./images/deliverance.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 132px;
+  }
+
+  .discipleship-img {
+    background-image: url('./images/discipleship.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 132px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 33px;
+    position: relative;
+    top: 78px;
+  }
+
+  /* Testimonies Section */
+  .section-2.active-1 {
+    background-color: #141414;
+  }
+
+  .yellow-line-divider {
+    content: '';
+    display: block;
+    width: 139px;
+    height: 5px;
+    background: #f9ef23;
+  }
+
+  .testimonies-text {
+    font-size: 42px;
+  }
+
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 86px 100px;
+  }
+
+  /* Footer 1 */
+  .footer-1 {
+    padding: 10px;
+  }
+
+  .footer-1 .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .footer-1 .ministry-name-footer,
+  .footer-1 .copyright-text,
+  .footer-1 .made-in-fiji-text {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+
+  /* Footer 2 */
+  .footer-2 {
+    padding: 10px;
+  }
+
+  .footer-2 .ministry-logo-footer {
+    padding: 23px;
+  }
+
+  .footer-2 .ministry-name-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .footer-2 .copyright-text-2 {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 9.5px;
+  }
+}
+
+/* Styles for screens at 370px & above */
+@media only screen and (min-width: 370px) {
+  .section-1 .paragraph-1 .sentence {
+    font-size: 16px;
+  }
+
+  .booking-btn {
+    position: relative;
+    top: -112px;
+    font-size: 16px;
+    width: auto;
+  }
+
+  .booking-btn:hover {
+    color: black;
+  }
+
+  .booking-btn:active {
+    color: black;
+    border: 10px solid #f9ef23;
+  }
+
+  .be-free-text {
+    font-size: 61px;
+  }
+
+  /* About Section */
+  .about-section .paragraph {
+    font-size: 16px;
+  }
+}
+
+/* Styles for screens at 390px & above */
+@media only screen and (min-width: 390px) {
+  .nav .ministry-name-nav {
+    font-size: 19px;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    left: 225px;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    left: 225px;
+  }
+
+  .section-1 {
+    background-color: black;
+    padding: 300px 7px 100px 7px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: -225px;
+  }
+
+  .section-1 .paragraph-1 .sentence {
+    font-size: 17px;
+  }
+
+  .arrow-img {
+    padding: 150px;
+    top: -127px;
+  }
+
+  .booking-btn {
+    top: -167px;
+    font-size: 19px;
+  }
+
+  .be-free-text {
+    top: -82px;
+    font-size: 63px;
+  }
+
+  /* Booking Section */
+  .get-in-touch-today-text {
+    font-size: 50px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 50px;
+  }
+
+  .about-section .paragraph {
+    font-size: 17px;
+  }
+
+  .healing-img,
+  .deliverance-img,
+  .discipleship-img {
+    padding: 150px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 40px;
+    position: relative;
+    top: 90px;
+  }
+}
+
+/* Styles for screens at 527px & above */
+@media only screen and (min-width: 527px) {
+  .nav .ministry-logo-nav {
+    padding: 38px;
+  }
+
+  .nav .ministry-name-nav {
+    font-size: 20px;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    left: 346px;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    left: 346px;
+  }
+
+  .section-1 .paragraph-1 .sentence {
+    font-size: 19px;
+  }
+
+  .booking-btn {
+    font-size: 20px;
+  }
+
+  /* Booking Section */
+  .get-in-touch-today-text {
+    font-size: 60px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section .paragraph {
+    font-size: 19px;
+  }
+
+  .healing-img,
+  .deliverance-img,
+  .discipleship-img {
+    padding: 230px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 45px;
+    position: relative;
+    top: 170px;
+  }
+
+  /* Testimonies Section */
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 142px;
+  }
+
+  /* Footer 1 */
+  .footer-1 {
+    padding: 26px;
+  }
+
+  .footer-1 .ministry-name-footer,
+  .footer-1 .copyright-text,
+  .footer-1 .made-in-fiji-text {
+    font-size: 13px;
+  }
+
+  /* Footer 2 */
+  .footer-2 {
+    padding: 26px;
+  }
+
+  .footer-2 .ministry-name-footer,
+  .footer-2 .copyright-text-2 {
+    margin-right: 5px;
+    font-size: 13px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 12px;
+  }
+}
+
+/* Styles for screens at 705px & above */
+@media only screen and (min-width: 705px) {
+  .section-1 .paragraph-1 .sentence {
+    font-size: 19px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 50px;
+  }
+
+  .healing-img,
+  .deliverance-img,
+  .discipleship-img {
+    padding: 250px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 50px;
+    position: relative;
+    top: 180px;
+  }
+
+  /* Testimonies Section */
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 182px;
+  }
+}
+
+/* Styles for screens at 768px & above */
+@media only screen and (min-width: 768px) {
+  /* Styles for navbar */
+  .nav {
+    position: relative;
+    top: -365px;
+  }
+
+  .nav .ministry-name-nav {
+    font-size: 25px;
+  }
+
+  .hamburger {
+    margin-top: -1px;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    top: 44px;
+    left: 419px;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    top: 60px;
+    left: 419px;
+  }
+
+  .nav-link-desktop:hover {
+    border: 2px solid #f9ef23;
+    color: #f9ef23;
+  }
+
+  .nav-link-desktop:active {
+    border: 4px solid #f9ef23;
+    color: #f9ef23;
+  }
+
+  /* Hides a section that uses this class */
+  .hidden {
+    display: none;
+  }
+
+  /* Only shows when Home navbar mobile menu link is clicked */
+  .section-1.active-1 {
+    padding: 382px 50px 100px 50px;
+  }
+
+  /* Only shows when Booking navbar mobile menu link is clicked */
+  .section-1.active-2 {
+    padding: 382px 50px 100px 50px;
+  }
+
+  /* Only shows when About Us navbar mobile menu link is clicked */
+  .section-1.active-3 {
+    padding: 382px 50px 100px 50px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: -310px;
+  }
+
+  .section-1 .paragraph-1 .sentence {
+    font-size: 22px;
+  }
+
+  .arrow-img {
+    padding: 189px;
+  }
+
+  .booking-btn {
+    top: -185px;
+    font-size: 27px;
+  }
+
+  .be-free-text {
+    font-size: 81px;
+  }
+
+  /* Booking Section */
+  .booking-section {
+    position: relative;
+    top: -249px;
+  }
+
+  /* About Section */
+  .about-section {
+    position: relative;
+    top: -260px;
+  }
+
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section .paragraph {
+    font-size: 22px;
+  }
+
+  .healing-img,
+  .deliverance-img,
+  .discipleship-img {
+    padding: 302px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 55px;
+    position: relative;
+    top: 190px;
+  }
+
+  /* Testimonies Section */
+  .yellow-line-divider {
+    width: 172px;
+  }
+
+  .testimonies-text {
+    font-size: 73px;
+  }
+
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 220px;
+  }
+
+  /* Footer 1 */
+  .footer-1 .ministry-logo-footer {
+    padding: 31px;
+  }
+
+  .footer-1 .ministry-name-footer,
+  .footer-1 .copyright-text,
+  .footer-1 .made-in-fiji-text {
+    font-size: 18px;
+  }
+
+  /* Footer 2 */
+  .footer-2 .ministry-logo-footer {
+    padding: 31px;
+  }
+
+  .footer-2 .ministry-name-footer,
+  .footer-2 .copyright-text-2 {
+    font-size: 18px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 16px;
+  }
+}
+
+/* Styles for screens at 885px & above */
+@media only screen and (min-width: 885px) {
+  .section-1 {
+    padding: 382px 50px 33px 50px;
+  }
+
+  .arrow-img {
+    padding: 217px;
+    top: -210px;
+  }
+
+  .booking-btn {
+    top: -288px;
+  }
+
+  .be-free-text {
+    font-size: 81px;
+    position: relative;
+    top: -156px;
+  }
+
+  /* Booking Section */
+  .booking-section {
+    position: relative;
+    top: -249px;
+  }
+
+  /* About Section */
+  .about-section {
+    position: relative;
+    top: -272px;
+  }
+
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section .paragraph {
+    font-size: 22px;
+  }
+
+  .healing-img,
+  .deliverance-img,
+  .discipleship-img {
+    padding: 230px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 40px;
+    position: relative;
+    top: 150px;
+  }
+
+  /* Testimonies Section */
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 230px;
+  }
+}
+
+/* Styles for screens at 992px & above */
+@media only screen and (min-width: 992px) {
+  /* Home navbar desktop button */
+  .nav-link-desktop:nth-child(1).active-1 {
+    border: 2px solid yellow;
+    color: yellow;
+  }
+
+  /* Hides a section that uses this class */
+  .hidden {
+    display: none;
+  }
+
+  /* Only shows when Home navbar mobile menu link is clicked */
+  .section-1.active-1 {
+    background-color: black;
+    padding: 382px 50px 100px 50px;
+  }
+
+  /* Only shows when Booking navbar mobile menu link is clicked */
+  .section-1.active-2 {
+    background-image: url("./images/background-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 382px 50px 100px 50px;
+  }
+
+  /* Only shows when About Us navbar mobile menu link is clicked */
+  .section-1.active-3 {
+    background-color: #141414;
+    padding: 382px 50px 181px 50px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section .paragraph {
+    font-size: 22px;
+  }
+
+  .healing-img,
+  .deliverance-img,
+  .discipleship-img {
+    padding: 157px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+  }
+
+  /* Testimonies Section */
+  .section-2.active-1 {
+    background-color: #141414;
+  }
+
+  /* Footer 1 */
+  .footer-1.active-1 {
+    padding: 26px;
+  }
+
+  .footer-1 .ministry-logo-footer {
+    padding: 31px;
+  }
+
+  .footer-1 .ministry-name-footer,
+  .footer-1 .copyright-text,
+  .footer-1 .made-in-fiji-text {
+    font-size: 18px;
+  }
+
+  /* Footer 2 */
+  .footer-2.active-2 {
+    padding: 26px;
+  }
+
+  .footer-2 .ministry-logo-footer {
+    padding: 31px;
+  }
+
+  .footer-2 .ministry-name-footer,
+  .footer-2 .copyright-text-2 {
+    font-size: 18px;
+  }
+
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 16px;
+  }
+}
+
+/* Styles for screens at 1100px & above */
+@media only screen and (min-width: 1100px) {
+  /* Only shows when About Us navbar mobile menu link is clicked */
+  .section-1.active-3 {
+    background-color: #141414;
+    padding: 382px 50px 194px 50px;
+  }
+
+  .section-1 .paragraph-1 {
+    margin-top: -274px;
+  }
+
+  .section-1 .paragraph-1 .sentence {
+    font-size: 25px;
+  }
+
+  .arrow-img {
+    padding: 247px;
+  }
+
+  .booking-btn {
+    top: -311px;
+  }
+
+  .be-free-text {
+    top: -179px;
+  }
+
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section .paragraph {
+    font-size: 22px;
+  }
+
+  .healing-img,
+  .deliverance-img,
+  .discipleship-img {
+    padding: 167px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 45px;
+    position: relative;
+    top: 120px;
+  }
+
+  /* Testimonies Section */
+  .yellow-line-divider {
+    width: 205px;
+  }
+
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 350px;
+  }
+}
+
+/* Styles for screens at 1500px & above */
+@media only screen and (min-width: 1500px) {
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section .paragraph {
+    font-size: 25px;
+  }
+
+  .healing-img,
+  .deliverance-img,
+  .discipleship-img {
+    padding: 225px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 50px;
+    position: relative;
+    top: 150px;
+  }
+
+  /* Testimonies Section */
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 430px;
+  }
+}
+
+/* Styles for screens at 1700px & above */
+@media only screen and (min-width: 1700px) {
+  /* About Section */
+  .about-us-text {
+    font-size: 60px;
+  }
+
+  .about-section .paragraph {
+    font-size: 25px;
+  }
+
+  .healing-img,
+  .deliverance-img,
+  .discipleship-img {
+    padding: 267px;
+  }
+
+  .card-img-overlay h5 {
+    font-size: 55px;
+    position: relative;
+    top: 220px;
+  }
+
+  /* Testimonies Section */
+  .testimony-img-1,
+  .testimony-img-2,
+  .testimony-img-3 {
+    padding: 480px;
+  }
+}

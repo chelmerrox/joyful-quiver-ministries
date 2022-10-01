@@ -2,7 +2,7 @@
 
 # Hope in Christ Ministry
 
-> The Hope in Christ Ministry website. Built with HTML, CSS, Bootstrap, JavaScript and Webpack.
+> The Hope in Christ Ministry website is a Single Page Application (SPA) where users can find information about the ministry & book a deliverance session with our deliverance team. Built with HTML, CSS, Bootstrap, JavaScript and Webpack.
 
 ## Built With
 
@@ -11,15 +11,17 @@
 - JavaScript
 - Bootstrap
 - Webpack
+- TypeForm
+- Canva
 - Git
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://raw.githack.com/chelmerrox/hope-in-christ-ministry/page-structure/dist/index.html)
 
 ## Preview
 
-![Website preview](images/preview.png)
+![Website preview](./preview.png)
 
 ## Getting Started
 
@@ -31,6 +33,8 @@ To get a local copy up and running follow these simple example steps.
 - JavaScript
 - Bootstrap
 - Webpack
+- TypeForm
+- Canva
 - VSCode (or any other text editor)
 - Git
 - GitHub
