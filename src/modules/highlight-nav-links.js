@@ -1,6 +1,6 @@
 import {
   navMenuMobileLinks,
-  navDesktopLinks
+  navDesktopLinks,
 } from './variable-declarations.js';
 
 const highlightNavLinks = () => {

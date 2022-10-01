@@ -1,4 +1,3 @@
-
 import {
   navMenuMobileLinks,
   navDesktopLinks,
@@ -12,7 +11,7 @@ import {
 } from './variable-declarations.js';
 
 // For mobile & tablets; render home section on clicking logo's in nav & footer
-export const renderHomeSectionMobile = ()  => {
+export const renderHomeSectionMobile = () => {
   navMenuMobileLinks[1].style.removeProperty('border-bottom'); // Booking navbar mobile link
   navMenuMobileLinks[1].style.removeProperty('padding-bottom');
   navMenuMobileLinks[2].style.removeProperty('border-bottom'); // About navbar mobile link
@@ -35,11 +34,11 @@ export const renderHomeSectionMobile = ()  => {
   footerOne.classList.remove('hidden');
   footerTwo.classList.add('hidden');
   footerTwo.classList.remove('active-2', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
-  footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center'); 
+  footerTwo.classList.remove('justify-content-around', 'justify-content-sm-around', 'justify-content-md-around', 'justify-content-lg-around', 'align-items-center');
 };
 
 // For Desktops; render home section on clicking logo's in nav & footer
-export const renderHomeSectionDesktop = ()  => {
+export const renderHomeSectionDesktop = () => {
   navDesktopLinks[1].style.removeProperty('border'); // Booking navbar desktop button
   navDesktopLinks[1].style.removeProperty('color');
   navDesktopLinks[2].style.removeProperty('border'); // About navbar desktop button

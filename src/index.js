@@ -10,11 +10,11 @@ import {
 } from './modules/variable-declarations.js';
 import {
   renderHomeSectionMobile,
-  renderHomeSectionDesktop
+  renderHomeSectionDesktop,
 } from './modules/render-home-section-for-logos.js';
-import renderHomeSection  from './modules/render-home-section-nav.js';
-import renderAboutSection from './modules/render-about-section-nav';
-import renderBookingSection from './modules/render-booking-section-nav';
+import renderHomeSection from './modules/render-home-section-nav.js';
+import renderAboutSection from './modules/render-about-section-nav.js';
+import renderBookingSection from './modules/render-booking-section-nav.js';
 import highlightNavLinks from './modules/highlight-nav-links.js';
 
 /* Clicking on the ministry logo & name in navbar (for all screens) shows the homepage */

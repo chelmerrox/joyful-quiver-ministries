@@ -5,7 +5,7 @@ import {
   aboutSection,
   sectionTwo,
   footerOne,
-  footerTwo
+  footerTwo,
 } from './variable-declarations.js';
 
 const renderBookingSection = () => {
