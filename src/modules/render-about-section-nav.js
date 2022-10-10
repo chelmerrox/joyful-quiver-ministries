@@ -18,7 +18,7 @@ const renderAboutSection = () => {
   bookingSection.classList.remove('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'justify-content-lg-around', 'mt-5');
   aboutSection.classList.remove('hidden');
   aboutSection.classList.add('d-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-column', 'flex-sm-column', 'flex-md-column', 'flex-lg-column');
-  aboutSection.classList.add('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-5');
+  aboutSection.classList.add('align-items-center', 'align-items-sm-center', 'align-items-md-center', 'align-items-lg-center', 'mt-3');
   sectionTwo.classList.add('hidden');
   sectionTwo.classList.remove('active-1', 'row', 'px-3', 'py-4');
   footerOne.classList.add('active-1', 'bg-yellow', 'd-flex', 'd-sm-flex', 'd-md-flex', 'd-lg-flex', 'flex-row', 'flex-sm-row', 'flex-md-row', 'flex-lg-row');
