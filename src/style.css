@@ -598,7 +598,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 117px;
+    padding: 90px 117px;
   }
 
   .deliverance-img {
@@ -606,7 +606,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 117px;
+    padding: 90px 117px;
   }
 
   .discipleship-img {
@@ -614,13 +614,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 117px;
+    padding: 90px 117px;
   }
 
   .card-img-overlay h5 {
-    font-size: 33px;
+    font-size: 28px;
     position: relative;
-    top: 78px;
+    top: 62px;
   }
 
   /* Testimonies Section */
@@ -893,7 +893,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 132px;
+    padding: 106px 144px;
   }
 
   .deliverance-img {
@@ -901,7 +901,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 132px;
+    padding: 106px 144px;
   }
 
   .discipleship-img {
@@ -909,7 +909,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 132px;
+    padding: 106px 144px;
   }
 
   .card-img-overlay h5 {
@@ -1078,11 +1078,11 @@ body {
   .healing-img,
   .deliverance-img,
   .discipleship-img {
-    padding: 150px;
+    padding: 125px 172px;
   }
 
   .card-img-overlay h5 {
-    font-size: 40px;
+    font-size: 35px;
     position: relative;
     top: 90px;
   }
@@ -1128,7 +1128,7 @@ body {
 
   /* About Section */
   .about-us-text {
-    font-size: 60px;
+    font-size: 51px;
   }
 
   .about-section .paragraph {
@@ -1138,13 +1138,13 @@ body {
   .healing-img,
   .deliverance-img,
   .discipleship-img {
-    padding: 230px;
+    padding: 163px 230px;
   }
 
   .card-img-overlay h5 {
-    font-size: 45px;
+    font-size: 40px;
     position: relative;
-    top: 170px;
+    top: 123px;
   }
 
   /* Testimonies Section */
@@ -1196,13 +1196,13 @@ body {
   .healing-img,
   .deliverance-img,
   .discipleship-img {
-    padding: 250px;
+    padding: 179px 290px;
   }
 
   .card-img-overlay h5 {
-    font-size: 50px;
+    font-size: 45px;
     position: relative;
-    top: 180px;
+    top: 144px;
   }
 
   /* Testimonies Section */
@@ -1336,13 +1336,13 @@ body {
   .healing-img,
   .deliverance-img,
   .discipleship-img {
-    padding: 302px;
+    padding: 212px 302px;
   }
 
   .card-img-overlay h5 {
-    font-size: 55px;
+    font-size: 50px;
     position: relative;
-    top: 190px;
+    top: 177px;
   }
 
   /* Testimonies Section */
@@ -1431,13 +1431,13 @@ body {
   .healing-img,
   .deliverance-img,
   .discipleship-img {
-    padding: 230px;
+    padding: 219px 339px;
   }
 
   .card-img-overlay h5 {
-    font-size: 40px;
+    font-size: 48px;
     position: relative;
-    top: 150px;
+    top: 167px;
   }
 
   /* Testimonies Section */
@@ -1494,13 +1494,13 @@ body {
   .healing-img,
   .deliverance-img,
   .discipleship-img {
-    padding: 157px;
+    padding: 119px 159px;
   }
 
   .card-img-overlay h5 {
-    font-size: 40px;
+    font-size: 36px;
     position: relative;
-    top: 100px;
+    top: 89px;
   }
 
   /* Testimonies Section */
@@ -1583,13 +1583,13 @@ body {
   .healing-img,
   .deliverance-img,
   .discipleship-img {
-    padding: 167px;
+    padding: 126px 174px;
   }
 
   .card-img-overlay h5 {
-    font-size: 45px;
+    font-size: 37px;
     position: relative;
-    top: 120px;
+    top: 94px;
   }
 
   /* Testimonies Section */
@@ -1628,13 +1628,13 @@ body {
   .healing-img,
   .deliverance-img,
   .discipleship-img {
-    padding: 225px;
+    padding: 177px 244px;
   }
 
   .card-img-overlay h5 {
-    font-size: 50px;
+    font-size: 45px;
     position: relative;
-    top: 150px;
+    top: 147px;
   }
 
   /* Testimonies Section */
@@ -1663,13 +1663,13 @@ body {
   .healing-img,
   .deliverance-img,
   .discipleship-img {
-    padding: 267px;
+    padding: 208px 275px;
   }
 
   .card-img-overlay h5 {
-    font-size: 55px;
+    font-size: 50px;
     position: relative;
-    top: 220px;
+    top: 160px;
   }
 
   /* Testimonies Section */
