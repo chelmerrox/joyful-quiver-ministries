@@ -153,11 +153,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 19px;
+    padding: 26px;
   }
 
   #nav .ministry-name-nav {
-    margin-left: 1px;
+    margin-left: -4px;
     font-size: 10px;
   }
 
@@ -378,7 +378,7 @@ body {
   }
 
   .footer-1 .ministry-logo-footer {
-    padding: 23px;
+    padding: 27px;
   }
 
   .footer-1 .ministry-name-footer {
@@ -403,7 +403,7 @@ body {
   }
 
   .footer-2 .ministry-logo-footer {
-    padding: 23px;
+    padding: 27px;
   }
 
   .footer-2 .ministry-name-footer {
@@ -437,12 +437,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 19px;
+    padding: 33px;
   }
 
   .nav .ministry-name-nav {
-    margin-left: 1px;
-    font-size: 12px;
+    margin-left: -4px;
+    font-size: 13px;
   }
 
   .hamburger {
@@ -699,7 +699,7 @@ body {
 
   .footer-2 .email-address-text,
   .footer-2 .email-address {
-    font-size: 8px;
+    font-size: 6px;
   }
 }
 
@@ -718,12 +718,12 @@ body {
   }
 
   .nav .ministry-logo-nav {
-    padding: 27px;
+    padding: 36px;
   }
 
   .nav .ministry-name-nav {
     font-size: 14px;
-    margin-left: 7px;
+    margin-left: -4px;
   }
 
   .hamburger {
@@ -947,13 +947,13 @@ body {
   }
 
   .footer-1 .ministry-logo-footer {
-    padding: 23px;
+    padding: 35px;
   }
 
   .footer-1 .ministry-name-footer,
   .footer-1 .copyright-text,
   .footer-1 .made-in-fiji-text {
-    font-size: 12px;
+    font-size: 10px;
     margin-left: 2px;
   }
 
@@ -963,7 +963,7 @@ body {
   }
 
   .footer-2 .ministry-logo-footer {
-    padding: 23px;
+    padding: 35px;
   }
 
   .footer-2 .ministry-name-footer {
@@ -974,12 +974,12 @@ body {
 
   .footer-2 .copyright-text-2 {
     margin-right: 5px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .footer-2 .email-address-text,
   .footer-2 .email-address {
-    font-size: 9.5px;
+    font-size: 10.5px;
   }
 }
 
@@ -1017,8 +1017,12 @@ body {
 
 /* Styles for screens at 390px & above */
 @media only screen and (min-width: 390px) {
+  .nav .ministry-logo-nav {
+    padding: 40px;
+  }
+
   .nav .ministry-name-nav {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   .hamburger.active .bar:nth-child(1) {
@@ -1082,16 +1086,23 @@ body {
     position: relative;
     top: 90px;
   }
+
+  /* Footer 2 */
+  .footer-2 .email-address-text,
+  .footer-2 .email-address {
+    font-size: 9.5px;
+  }
 }
 
 /* Styles for screens at 527px & above */
 @media only screen and (min-width: 527px) {
   .nav .ministry-logo-nav {
-    padding: 38px;
+    padding: 51px;
   }
 
   .nav .ministry-name-nav {
-    font-size: 20px;
+    margin-left: -10px;
+    font-size: 17px;
   }
 
   .hamburger.active .bar:nth-child(1) {
@@ -1200,6 +1211,24 @@ body {
   .testimony-img-3 {
     padding: 182px;
   }
+
+  /* Footer 1 */
+  .footer-1 .ministry-logo-footer {
+    padding: 43px;
+  }
+
+  .footer-1 .ministry-name-footer {
+    margin-left: -4px;
+  }
+
+  /* Footer 2 */
+  .footer-2 .ministry-logo-footer {
+    padding: 43px;
+  }
+
+  .footer-2 .ministry-name-footer {
+    margin-left: -4px;
+  }
 }
 
 /* Styles for screens at 768px & above */
@@ -1210,8 +1239,13 @@ body {
     top: -365px;
   }
 
+  .nav .ministry-logo-nav {
+    padding: 53px;
+  }
+
   .nav .ministry-name-nav {
-    font-size: 25px;
+    margin-left: -10px;
+    font-size: 20px;
   }
 
   .hamburger {
@@ -1328,23 +1362,23 @@ body {
 
   /* Footer 1 */
   .footer-1 .ministry-logo-footer {
-    padding: 31px;
+    padding: 40px;
   }
 
   .footer-1 .ministry-name-footer,
   .footer-1 .copyright-text,
   .footer-1 .made-in-fiji-text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /* Footer 2 */
   .footer-2 .ministry-logo-footer {
-    padding: 31px;
+    padding: 40px;
   }
 
   .footer-2 .ministry-name-footer,
   .footer-2 .copyright-text-2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .footer-2 .email-address-text,
@@ -1480,7 +1514,7 @@ body {
   }
 
   .footer-1 .ministry-logo-footer {
-    padding: 31px;
+    padding: 49px;
   }
 
   .footer-1 .ministry-name-footer,
@@ -1495,7 +1529,7 @@ body {
   }
 
   .footer-2 .ministry-logo-footer {
-    padding: 31px;
+    padding: 49px;
   }
 
   .footer-2 .ministry-name-footer,
@@ -1568,6 +1602,16 @@ body {
   .testimony-img-3 {
     padding: 350px;
   }
+
+  /* Footer 1 */
+  .footer-1 .ministry-logo-footer {
+    padding: 55px;
+  }
+
+  /* Footer 2 */
+  .footer-2 .ministry-logo-footer {
+    padding: 55px;
+  }
 }
 
 /* Styles for screens at 1500px & above */
@@ -1603,6 +1647,10 @@ body {
 
 /* Styles for screens at 1700px & above */
 @media only screen and (min-width: 1700px) {
+  .nav .ministry-logo-nav {
+    padding: 62px;
+  }
+
   /* About Section */
   .about-us-text {
     font-size: 60px;
