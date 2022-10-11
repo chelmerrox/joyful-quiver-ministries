@@ -708,7 +708,7 @@ body {
   /* Styles for navbar */
   .nav {
     position: relative;
-    top: -272px;
+    top: -282px;
     z-index: 1;
   }
 
@@ -1241,7 +1241,7 @@ body {
   /* Styles for navbar */
   .nav {
     position: relative;
-    top: -365px;
+    top: -388px;
   }
 
   .nav .ministry-logo-nav {
@@ -1392,6 +1392,12 @@ body {
 
 /* Styles for screens at 885px & above */
 @media only screen and (min-width: 885px) {
+  /* Navbar */
+  .nav {
+    position: relative;
+    top: -407px;
+  }
+  
   .section-1 {
     padding: 382px 50px 33px 50px;
   }
