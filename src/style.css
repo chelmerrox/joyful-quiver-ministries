@@ -175,7 +175,7 @@ body {
     transform: translateY(8px) rotate(45deg);
     position: fixed;
     top: 27.5px;
-    left: 165px;
+    left: 34px;
     z-index: 10;
     background-color: black;
   }
@@ -184,7 +184,7 @@ body {
     transform: translateY(-8px) rotate(-45deg);
     position: fixed;
     top: 44px;
-    left: 165px;
+    left: 34px;
     z-index: 10;
     background-color: black;
   }
@@ -195,10 +195,10 @@ body {
     top: 0;
     gap: 0;
     flex-direction: column;
-    background-color: #f9ef23;
+    background-color: rgba(255,255,0,0.8);
     mix-blend-mode: multiply;
     backdrop-filter: blur(9px);
-    width: 50%;
+    width: 100%;
     height: 100%;
     text-align: center;
     transition: 0.3s;
@@ -459,7 +459,7 @@ body {
     transform: translateY(8px) rotate(45deg);
     position: fixed;
     top: 27.5px;
-    left: 165px;
+    left: 34px;
     z-index: 10;
     background-color: black;
   }
@@ -468,7 +468,7 @@ body {
     transform: translateY(-8px) rotate(-45deg);
     position: fixed;
     top: 44px;
-    left: 165px;
+    left: 34px;
     z-index: 10;
     background-color: black;
   }
@@ -479,10 +479,10 @@ body {
     top: 0;
     gap: 0;
     flex-direction: column;
-    background-color: #f9ef23;
+    background-color: rgba(255,255,0,0.8);
     mix-blend-mode: multiply;
     backdrop-filter: blur(9px);
-    width: 50%;
+    width: 100%;
     height: 100%;
     text-align: center;
     transition: 0.3s;
@@ -739,8 +739,8 @@ body {
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
     position: fixed;
-    top: 21.5px;
-    left: 181px;
+    top: 27.5px;
+    left: 36px;
     z-index: 10;
     background-color: black;
   }
@@ -748,8 +748,8 @@ body {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     position: fixed;
-    top: 38px;
-    left: 181px;
+    top: 44px;
+    left: 36px;
     z-index: 10;
     background-color: black;
   }
@@ -760,10 +760,10 @@ body {
     top: 0;
     gap: 0;
     flex-direction: column;
-    background-color: #f9ef23;
+    background-color: rgba(255,255,0,0.8);
     mix-blend-mode: multiply;
     backdrop-filter: blur(9px);
-    width: 50%;
+    width: 100%;
     height: 100%;
     text-align: center;
     transition: 0.3s;
@@ -1026,11 +1026,13 @@ body {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    left: 225px;
+    top: 33px;
+    left: 60px;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    left: 225px;
+    top: 49px;
+    left: 60px;
   }
 
   .section-1 {
@@ -1106,11 +1108,13 @@ body {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    left: 346px;
+    top: 39px;
+    left: 39px;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    left: 346px;
+    top: 55px;
+    left: 39px;
   }
 
   .section-1 .paragraph-1 .sentence {
@@ -1254,12 +1258,12 @@ body {
 
   .hamburger.active .bar:nth-child(1) {
     top: 44px;
-    left: 419px;
+    left: 89px;
   }
 
   .hamburger.active .bar:nth-child(3) {
     top: 60px;
-    left: 419px;
+    left: 89px;
   }
 
   .nav-link-desktop:hover {
