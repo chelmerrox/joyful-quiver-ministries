@@ -132,7 +132,7 @@ body {
 }
 
 .ministry-logo-footer {
-  background-image: url('./images/ministry-logo.svg');
+  background-image: url('./images/ministry-logo-2.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -149,17 +149,17 @@ body {
   }
 
   #nav .ministry-logo-nav {
-    background-image: url('./images/ministry-logo.svg');
+    background-image: url('./images/ministry-logo-1.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 26px;
+    padding: 60px;
   }
 
-  #nav .ministry-name-nav {
+ /*  #nav .ministry-name-nav {
     margin-left: -4px;
     font-size: 10px;
-  }
+  } */
 
   #hamburger {
     display: block;
@@ -378,14 +378,14 @@ body {
   }
 
   .footer-1 .ministry-logo-footer {
-    padding: 27px;
+    padding: 38px;
   }
 
-  .footer-1 .ministry-name-footer {
+  /* .footer-1 .ministry-name-footer {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 10px;
-  }
+  } */
 
   .footer-1 .copyright-text {
     margin-right: 5px;
@@ -403,14 +403,14 @@ body {
   }
 
   .footer-2 .ministry-logo-footer {
-    padding: 27px;
+    padding: 38px;
   }
 
-  .footer-2 .ministry-name-footer {
+  /* .footer-2 .ministry-name-footer {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 10px;
-  }
+  } */
 
   .footer-2 .copyright-text-2 {
     margin-right: 5px;
@@ -433,17 +433,17 @@ body {
   }
 
   .nav .ministry-logo-nav {
-    background-image: url('./images/ministry-logo.svg');
+    background-image: url('./images/ministry-logo-1.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 33px;
+    padding: 65px;
   }
 
-  .nav .ministry-name-nav {
+  /* .nav .ministry-name-nav {
     margin-left: -4px;
     font-size: 13px;
-  }
+  } */
 
   .hamburger {
     display: block;
@@ -654,18 +654,18 @@ body {
 
   /* Footer 1 */
   .footer-1.active-1 {
-    padding: 10px;
+    padding: 5px;
   }
 
   .footer-1 .ministry-logo-footer {
-    padding: 23px;
+    padding: 38px;
   }
 
-  .footer-1 .ministry-name-footer {
+  /* .footer-1 .ministry-name-footer {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 10px;
-  }
+  } */
 
   .footer-1 .copyright-text {
     margin-right: 5px;
@@ -679,18 +679,18 @@ body {
 
   /* Footer 2 */
   .footer-2.active-2 {
-    padding: 10px;
+    padding: 5px;
   }
 
   .footer-2 .ministry-logo-footer {
-    padding: 23px;
+    padding: 38px;
   }
 
-  .footer-2 .ministry-name-footer {
+  /* .footer-2 .ministry-name-footer {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 10px;
-  }
+  } */
 
   .footer-2 .copyright-text-2 {
     margin-right: 5px;
@@ -718,13 +718,17 @@ body {
   }
 
   .nav .ministry-logo-nav {
-    padding: 36px;
+    background-image: url('./images/ministry-logo-1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 71px;
   }
 
-  .nav .ministry-name-nav {
+ /*  .nav .ministry-name-nav {
     font-size: 14px;
     margin-left: -4px;
-  }
+  } */
 
   .hamburger {
     display: block;
@@ -943,14 +947,13 @@ body {
 
   /* Footer 1 */
   .footer-1 {
-    padding: 10px;
+    padding: 5px;
   }
 
   .footer-1 .ministry-logo-footer {
-    padding: 35px;
+    padding: 48px;
   }
 
-  .footer-1 .ministry-name-footer,
   .footer-1 .copyright-text,
   .footer-1 .made-in-fiji-text {
     font-size: 10px;
@@ -959,18 +962,18 @@ body {
 
   /* Footer 2 */
   .footer-2 {
-    padding: 10px;
+    padding: 5px;
   }
 
   .footer-2 .ministry-logo-footer {
-    padding: 35px;
+    padding: 48px;
   }
 
-  .footer-2 .ministry-name-footer {
+  /* .footer-2 .ministry-name-footer {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 10px;
-  }
+  } */
 
   .footer-2 .copyright-text-2 {
     margin-right: 5px;
@@ -1018,7 +1021,7 @@ body {
 /* Styles for screens at 390px & above */
 @media only screen and (min-width: 390px) {
   .nav .ministry-logo-nav {
-    padding: 40px;
+    padding: 79px;
   }
 
   .nav .ministry-name-nav {
@@ -1099,7 +1102,7 @@ body {
 /* Styles for screens at 527px & above */
 @media only screen and (min-width: 527px) {
   .nav .ministry-logo-nav {
-    padding: 51px;
+    padding: 83px;
   }
 
   .nav .ministry-name-nav {
@@ -1160,10 +1163,9 @@ body {
 
   /* Footer 1 */
   .footer-1 {
-    padding: 26px;
+    padding: 5px;
   }
 
-  .footer-1 .ministry-name-footer,
   .footer-1 .copyright-text,
   .footer-1 .made-in-fiji-text {
     font-size: 13px;
@@ -1171,10 +1173,9 @@ body {
 
   /* Footer 2 */
   .footer-2 {
-    padding: 26px;
+    padding: 5px;
   }
 
-  .footer-2 .ministry-name-footer,
   .footer-2 .copyright-text-2 {
     margin-right: 5px;
     font-size: 13px;
@@ -1218,21 +1219,21 @@ body {
 
   /* Footer 1 */
   .footer-1 .ministry-logo-footer {
-    padding: 43px;
+    padding: 60px;
   }
 
-  .footer-1 .ministry-name-footer {
+  /* .footer-1 .ministry-name-footer {
     margin-left: -4px;
-  }
+  } */
 
   /* Footer 2 */
   .footer-2 .ministry-logo-footer {
-    padding: 43px;
+    padding: 60px;
   }
 
-  .footer-2 .ministry-name-footer {
+  /* .footer-2 .ministry-name-footer {
     margin-left: -4px;
-  }
+  } */
 }
 
 /* Styles for screens at 768px & above */
@@ -1244,7 +1245,7 @@ body {
   }
 
   .nav .ministry-logo-nav {
-    padding: 53px;
+    padding: 100px;
   }
 
   .nav .ministry-name-nav {
@@ -1366,10 +1367,9 @@ body {
 
   /* Footer 1 */
   .footer-1 .ministry-logo-footer {
-    padding: 40px;
+    padding: 65px;
   }
 
-  .footer-1 .ministry-name-footer,
   .footer-1 .copyright-text,
   .footer-1 .made-in-fiji-text {
     font-size: 16px;
@@ -1377,10 +1377,9 @@ body {
 
   /* Footer 2 */
   .footer-2 .ministry-logo-footer {
-    padding: 40px;
+    padding: 65px;
   }
 
-  .footer-2 .ministry-name-footer,
   .footer-2 .copyright-text-2 {
     font-size: 16px;
   }
@@ -1514,14 +1513,13 @@ body {
 
   /* Footer 1 */
   .footer-1.active-1 {
-    padding: 26px;
+    padding: 5px;
   }
 
   .footer-1 .ministry-logo-footer {
-    padding: 49px;
+    padding: 70px;
   }
 
-  .footer-1 .ministry-name-footer,
   .footer-1 .copyright-text,
   .footer-1 .made-in-fiji-text {
     font-size: 18px;
@@ -1529,14 +1527,13 @@ body {
 
   /* Footer 2 */
   .footer-2.active-2 {
-    padding: 26px;
+    padding: 5px;
   }
 
   .footer-2 .ministry-logo-footer {
-    padding: 49px;
+    padding: 70px;
   }
 
-  .footer-2 .ministry-name-footer,
   .footer-2 .copyright-text-2 {
     font-size: 18px;
   }
@@ -1609,12 +1606,12 @@ body {
 
   /* Footer 1 */
   .footer-1 .ministry-logo-footer {
-    padding: 55px;
+    padding: 75px;
   }
 
   /* Footer 2 */
   .footer-2 .ministry-logo-footer {
-    padding: 55px;
+    padding: 75px;
   }
 }
 
@@ -1652,7 +1649,7 @@ body {
 /* Styles for screens at 1700px & above */
 @media only screen and (min-width: 1700px) {
   .nav .ministry-logo-nav {
-    padding: 62px;
+    padding: 105px;
   }
 
   /* About Section */
