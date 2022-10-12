@@ -255,11 +255,11 @@ body {
     padding: 13px 7px 236px 7px;
   }
 
-  .paragraph-1 {
-    margin-top: 91px;
+  .section-1 .paragraph-1 {
+    margin-top: 16px;
   }
 
-  .paragraph-1 .sentence {
+  .section-1 .paragraph-1 .sentence {
     font-size: 13px;
   }
 
@@ -541,11 +541,11 @@ body {
     padding: 13px 7px 236px 7px;
   }
 
-  .paragraph-1 {
-    margin-top: 91px;
+  .section-1 .paragraph-1 {
+    margin-top: 16px;
   }
 
-  .paragraph-1 .sentence {
+  .section-1 .paragraph-1 .sentence {
     font-size: 13px;
   }
 
@@ -828,12 +828,8 @@ body {
     padding: 272px 0 20px 0;
   }
 
-  .paragraph-1 {
-    margin-top: 91px;
-  }
-
   .section-1 .paragraph-1 {
-    margin-top: -212px;
+    margin-top: -267px;
   }
 
   .section-1 .paragraph-1 .sentence {
@@ -1050,7 +1046,7 @@ body {
   }
 
   .section-1 .paragraph-1 {
-    margin-top: -225px;
+    margin-top: -267px;
   }
 
   .section-1 .paragraph-1 .sentence {
@@ -1304,7 +1300,7 @@ body {
   }
 
   .section-1 .paragraph-1 {
-    margin-top: -310px;
+    margin-top: -360px;
   }
 
   .section-1 .paragraph-1 .sentence {
@@ -1565,7 +1561,7 @@ body {
   }
 
   .section-1 .paragraph-1 {
-    margin-top: -274px;
+    margin-top: -337px;
   }
 
   .section-1 .paragraph-1 .sentence {
