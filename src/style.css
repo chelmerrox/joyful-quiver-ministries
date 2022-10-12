@@ -214,10 +214,15 @@ body {
     right: 0;
   }
 
+  .nav-menu-mobile .nav-item-mobile {
+    position: relative;
+    top: 103px;
+  }
+
   .nav .nav-item-mobile .nav-link-mobile {
     color: #1a2236;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
   }
 
@@ -458,7 +463,7 @@ body {
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
     position: fixed;
-    top: 27.5px;
+    top: 98.5px;
     left: 34px;
     z-index: 10;
     background-color: black;
@@ -467,7 +472,7 @@ body {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     position: fixed;
-    top: 44px;
+    top: 114px;
     left: 34px;
     z-index: 10;
     background-color: black;
@@ -498,10 +503,15 @@ body {
     right: 0;
   }
 
+  .nav-menu-mobile .nav-item-mobile {
+    position: relative;
+    top: 103px;
+  }
+
   .nav .nav-item-mobile .nav-link-mobile {
     color: #1a2236;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 500;
   }
 
@@ -743,7 +753,7 @@ body {
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
     position: fixed;
-    top: 27.5px;
+    top: 145.5px;
     left: 36px;
     z-index: 10;
     background-color: black;
@@ -752,7 +762,7 @@ body {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     position: fixed;
-    top: 44px;
+    top: 161px;
     left: 36px;
     z-index: 10;
     background-color: black;
@@ -774,8 +784,10 @@ body {
     z-index: 1;
     padding-top: 220px;
   }
-
-  .nav-item-mobile {
+  
+  .nav-menu-mobile .nav-item-mobile {
+    position: relative;
+    top: 60px;
     margin: 16px 0;
   }
 
@@ -786,7 +798,7 @@ body {
   .nav .nav-item-mobile .nav-link-mobile {
     color: #1a2236;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 500;
   }
 
@@ -1029,12 +1041,12 @@ body {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    top: 33px;
+    top: 145.5px;
     left: 60px;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    top: 49px;
+    top: 161px;
     left: 60px;
   }
 
@@ -1111,13 +1123,13 @@ body {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    top: 39px;
-    left: 39px;
+    top: 145px;
+    left: 72px;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    top: 55px;
-    left: 39px;
+    top: 160px;
+    left: 72px;
   }
 
   .section-1 .paragraph-1 .sentence {
@@ -1258,12 +1270,12 @@ body {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    top: 44px;
+    top: 156px;
     left: 89px;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    top: 60px;
+    top: 172px;
     left: 89px;
   }
 
