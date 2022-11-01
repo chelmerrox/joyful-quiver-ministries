@@ -215,7 +215,7 @@ eval("module.exports = __webpack_require__.p + \"e8a4807655fc8e2c2218.png\";\n\n
   \**************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"68e7967eabc9404c7958.png\";\n\n//# sourceURL=webpack://hope-in-christ-ministry/./src/images/5.png?");
+eval("module.exports = __webpack_require__.p + \"7efe41bbe5a6a745963c.png\";\n\n//# sourceURL=webpack://hope-in-christ-ministry/./src/images/5.png?");
 
 /***/ }),
 
