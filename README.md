@@ -1,8 +1,8 @@
-![](https://img.shields.io/badge/HICM-Hope%20in%20Christ%20Ministry-yellow)
+![](https://img.shields.io/badge/JQM-Joyful%20Quiver%20Ministries-yellow)
 
-# Hope in Christ Ministry
+# Joyful Quiver Ministries
 
-> The Hope in Christ Ministry website is a Single Page Application (SPA) where users can find information about the ministry & book a deliverance session with our deliverance team. Built with HTML, CSS, Bootstrap, JavaScript and Webpack.
+> The Joyful Quiver Ministries website is a Single Page Application (SPA) where users can find information about the ministry & book a deliverance session with the deliverance team. Built with HTML, CSS, Bootstrap, JavaScript and Webpack.
 
 ## Built With
 
@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/chelmerrox/hope-in-christ-ministry/page-structure/dist/index.html)
+[Live Demo Link](https://raw.githack.com/chelmerrox/joyful-quiver-ministries/page-structure-2/dist/index.html)
 
 ## Preview
 
@@ -48,13 +48,13 @@ From the command line, do the following steps below:
 
 ```bash
 # Clone this repository
-$ git clone git@github.com:chelmerrox/hope-in-christ-ministry.git
+$ git clone git@github.com:chelmerrox/joyful-quiver-ministries.git
 
 ```
 2. Change directory/Go into the repository with the command below.
 
 ```bash
-$ cd hope-in-christ-ministry
+$ cd joyful-quiver-ministries
 
 ```
 
@@ -70,7 +70,7 @@ $ cd hope-in-christ-ministry
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/chelmerrox/hope-in-christ-ministry/issues).
+Feel free to check the [issues page](https://github.com/chelmerrox/joyful-quiver-ministries/issues).
 
 ## Show your support
 
