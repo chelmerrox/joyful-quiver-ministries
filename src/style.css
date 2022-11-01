@@ -194,7 +194,7 @@ body {
     top: 0;
     gap: 0;
     flex-direction: column;
-    background-color: rgba(255,255,0,0.8);
+    background-color: rgba(255, 255, 0, 0.8);
     mix-blend-mode: multiply;
     backdrop-filter: blur(9px);
     width: 100%;
@@ -479,7 +479,7 @@ body {
     top: 0;
     gap: 0;
     flex-direction: column;
-    background-color: rgba(255,255,0,0.8);
+    background-color: rgba(255, 255, 0, 0.8);
     mix-blend-mode: multiply;
     backdrop-filter: blur(9px);
     width: 100%;
@@ -761,7 +761,7 @@ body {
     top: 0;
     gap: 0;
     flex-direction: column;
-    background-color: rgba(255,255,0,0.8);
+    background-color: rgba(255, 255, 0, 0.8);
     mix-blend-mode: multiply;
     backdrop-filter: blur(9px);
     width: 100%;
@@ -1392,7 +1392,7 @@ body {
     position: relative;
     top: -407px;
   }
-  
+
   .section-1 {
     padding: 382px 50px 33px 50px;
   }
