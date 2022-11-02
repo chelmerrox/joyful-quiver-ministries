@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/chelmerrox/joyful-quiver-ministries/page-structure-2/dist/index.html)
+[Live Demo Link](https://raw.githack.com/chelmerrox/joyful-quiver-ministries/page-structure-3/dist/index.html)
 
 ## Preview
 
