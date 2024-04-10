@@ -1,8 +1,8 @@
-![](https://img.shields.io/badge/HICM-Hope%20in%20Christ%20Ministry-yellow)
+![](https://img.shields.io/badge/JQM-Joyful%20Quiver%20Ministries-yellow)
 
-# Hope in Christ Ministry
+# Joyful Quiver Ministries
 
-> The Hope in Christ Ministry website. Built with HTML, CSS, Bootstrap, JavaScript and Webpack.
+> The Joyful Quiver Ministries website is a Single Page Application (SPA) where users can find information about the ministry & book a deliverance session with the deliverance team. Built with HTML, CSS, Bootstrap, JavaScript and Webpack.
 
 ## Built With
 
@@ -11,15 +11,17 @@
 - JavaScript
 - Bootstrap
 - Webpack
+- TypeForm
+- Canva
 - Git
 
 ## Live Demo
 
-[Live Demo Link]()
+[Joyful Quiver Ministries](https://joyfulquiverministries.netlify.app/)
 
 ## Preview
 
-![Website preview](images/preview.png)
+![Website preview](./preview.png)
 
 ## Getting Started
 
@@ -27,10 +29,12 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- HTML5 & CSS3 
+- HTML5 & CSS3
 - JavaScript
 - Bootstrap
 - Webpack
+- TypeForm
+- Canva
 - VSCode (or any other text editor)
 - Git
 - GitHub
@@ -44,29 +48,26 @@ From the command line, do the following steps below:
 
 ```bash
 # Clone this repository
-$ git clone git@github.com:chelmerrox/hope-in-christ-ministry.git
+$ git clone git@github.com:chelmerrox/joyful-quiver-ministries.git
 
 ```
+
 2. Change directory/Go into the repository with the command below.
 
 ```bash
-$ cd hope-in-christ-ministry
+$ cd joyful-quiver-ministries
 
 ```
 
 ## Author
 
-👤 **Losalini Rokocakau**
-
-- GitHub: [@chelmerrox](https://github.com/chelmerrox)
-- Twitter: [@chelmerrox](https://twitter.com/chelmerrox)
-- LinkedIn: [Losalini Rokocakau](https://linkedin.com/in/losalini-rokocakau)
+👤 **Losalini Rokocakau** [GitHub](https://github.com/chelmerrox) • [X](https://twitter.com/chelmerrox) • [LinkedIn](https://linkedin.com/in/losalini-rokocakau)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/chelmerrox/hope-in-christ-ministry/issues).
+Feel free to check the [issues page](https://github.com/chelmerrox/joyful-quiver-ministries/issues).
 
 ## Show your support
 
@@ -75,4 +76,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - My God & family
-- Microverse
+- Colleagues & mentors
