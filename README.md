@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/chelmerrox/joyful-quiver-ministries/page-structure-2/dist/index.html)
+[Joyful Quiver Ministries](https://joyfulquiverministries.netlify.app/)
 
 ## Preview
 
@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- HTML5 & CSS3 
+- HTML5 & CSS3
 - JavaScript
 - Bootstrap
 - Webpack
@@ -51,6 +51,7 @@ From the command line, do the following steps below:
 $ git clone git@github.com:chelmerrox/joyful-quiver-ministries.git
 
 ```
+
 2. Change directory/Go into the repository with the command below.
 
 ```bash
@@ -60,11 +61,7 @@ $ cd joyful-quiver-ministries
 
 ## Author
 
-👤 **Losalini Rokocakau**
-
-- GitHub: [@chelmerrox](https://github.com/chelmerrox)
-- Twitter: [@chelmerrox](https://twitter.com/chelmerrox)
-- LinkedIn: [Losalini Rokocakau](https://linkedin.com/in/losalini-rokocakau)
+👤 **Losalini Rokocakau** [GitHub](https://github.com/chelmerrox) • [X](https://twitter.com/chelmerrox) • [LinkedIn](https://linkedin.com/in/losalini-rokocakau)
 
 ## 🤝 Contributing
 
@@ -79,4 +76,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - My God & family
-- Microverse
+- Colleagues & mentors
